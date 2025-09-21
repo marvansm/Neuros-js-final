@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-monrope: oklch(0.72 0.11 178);
+  --font-sora: oklch(0.72 0.11 178);
+}
