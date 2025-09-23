@@ -26,3 +26,17 @@
   height: 100%;
   object-fit: cover;
 }
+
+.count {
+  color: #02010100;
+  font-family: "Manrope Alt", Sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #CB515A;
+  stroke: #CB515A;
+  line-height: 1em;
+}
+
