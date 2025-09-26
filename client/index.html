@@ -1,398 +1,1034 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuros</title>
+    <link
+      rel="shortcut icon"
+      href="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2023/12/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/remixicon/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neuros</title>
-  <link rel="shortcut icon"
-    href="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2023/12/cropped-favicon-32x32.png"
-    type="image/x-icon" />
-  <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./src/style.css" />
-</head>
+  <body>
+    <header
+      class="mx-auto px-[40px] sticky top-0 left-[20px] right-[20px] pt-[10px] bg-transparent z-[999]"
+    >
+      <div>
+        <nav
+          class="flex items-center justify-between py-[15px] px-[20px] rounded-[25px] shadow-sm bg-white"
+        >
+          <div class="left flex items-center">
+            <div class="sideBarIcon w-[70px]">
+              <i class="ri-layout-grid-fill text-[25px]"></i>
+            </div>
+            <div class="logo w-[47px] h-auto">
+              <img
+                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+          <div class="tabs">
+            <ul class="flex items-center gap-[17px] uppercase font-manrope">
+              <li
+                class="py-[13px] bg-[#333] cursor-pointer duration-300 text-[#f5f5f5] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center"
+              >
+                Home
+              </li>
+              <li
+                class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center"
+              >
+                Pages
+              </li>
+              <li
+                class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center"
+              >
+                Services
+              </li>
+              <li
+                class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center"
+              >
+                Shop
+              </li>
+              <li
+                class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center"
+              >
+                blog
+              </li>
+              <li
+                class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center"
+              >
+                Contacts
+              </li>
+            </ul>
+          </div>
+          <div class="actions">
+            <ul class="flex items-center">
+              <li class="h-[20px] my-[10px] mx-[15px]">
+                <i class="ri-search-line text-[20px]"></i>
+              </li>
+              <li
+                class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)] hover:[background:linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]"
+              >
+                <span
+                  class="block rounded-[999px] font-manrope bg-white hover:bg-transparent transition-colors duration-300 font-semibold min-w-[158px] px-[18px] py-[15px] text-center"
+                >
+                  Get in touch
+                </span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pt-[80px] bg-[#F0F2F4]">
+        <div class="swiper mySwiper relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex flex-col items-center justify-center">
+              <div class="container max-w-[1340px] px-[40px] mx-auto">
+                <div class="grid grid-cols-12 items-end">
+                  <div class="left col-span-8">
+                    <h2
+                      class="text-[80px] text-[#333333] leading-[1.125] font-normal tracking-[-2.4px] font-sora w-[700px] text-left"
+                    >
+                      Harness the Power of
+                      <span class="text-[#62639B]">Artificial</span>
+                      <span class="text-[#C4515C]"> Intelligence</span>
+                    </h2>
+                  </div>
+                  <div class="right col-span-4 flex items-start flex-col">
+                    <p
+                      class="text-[16px] text-left font-medium leading-[1.875em] font-manrope text-[#333333]"
+                    >
+                      Highlight the potential benefits of Neural Networks, such
+                      as improved decision-making, predictive analytics, and
+                      automation.
+                    </p>
+                    <button
+                      class="leading-[27px] text-[16px] hover:bg-[#E74D43] duration-300 cursor-pointer text-[#FFFFFF] py-[16px] px-[49px] rounded-[999px] font-manrope font-medium bg-[#333333] min-w-[58px] mt-[27px]"
+                    >
+                      <i class="ri-arrow-drop-right-line"></i> Discover
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="overflow-hidden pt-[70px] px-[40px] relative">
+                <img
+                  src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/01/Ooze-40-1.jpg"
+                  alt=""
+                  class="w-full h-full object-cover rounded-[25px]"
+                />
 
-<body>
-  <header class="mx-auto px-[40px] sticky top-0 left-[20px] right-[20px] pt-[10px] bg-[#F0F2F4] z-[999]">
-    <nav class="flex items-center justify-between py-[15px] px-[20px] rounded-[25px] bg-white">
-      <div class="left flex items-center">
-        <div class="sideBarIcon w-[70px]">
-          <i class="ri-layout-grid-fill text-[25px]"></i>
+                <div
+                  class="overImg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[314px]"
+                >
+                  <img
+                    src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/03/Logo.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+              <div class="container max-w-[1340px] px-[40px] mx-auto">
+                <div class="w-full flex items-end justify-end">
+                  <h2
+                    class="text-[80px] text-[#333333] leading-[1.125] font-normal tracking-[-2.4px] font-sora w-full text-left"
+                  >
+                    Revolutionize your business <br />
+                    with cutting-edge<span class="text-[#D3878F]"> Neural</span>
+                    <br /><span class="text-[#575EA8]"> Network</span>
+                    solutions
+                  </h2>
+                </div>
+              </div>
+              <div class="overflow-hidden pt-[70px] px-[40px] relative">
+                <img
+                  src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/meet-neuro-page-title-bg.jpg"
+                  alt=""
+                  class="w-full h-full object-cover rounded-[25px]"
+                />
+
+                <div
+                  class="overImg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[314px]"
+                >
+                  <img
+                    src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/03/Logo.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+              <div class="container max-w-[1340px] px-[40px] mx-auto">
+                <div class="grid grid-cols-12 items-end">
+                  <div class="left col-span-8">
+                    <h2
+                      class="text-[80px] text-[#333333] leading-[1.125] font-normal tracking-[-2.4px] font-sora w-[700px] text-left"
+                    >
+                      Harness the Power of
+                      <span class="text-[#62639B]">Artificial</span>
+                      <span class="text-[#C4515C]"> Intelligence</span>
+                    </h2>
+                  </div>
+                  <div class="right col-span-4">
+                    <p
+                      class="text-[16px] text-left font-medium leading-[1.875em] font-manrope text-[#333333]"
+                    >
+                      Highlight the potential benefits of Neural Networks, such
+                      as improved decision-making, predictive analytics, and
+                      automation.
+                    </p>
+                    <button
+                      class="leading-[27px] text-[16px] hover:bg-[#E74D43] duration-300 cursor-pointer text-[#FFFFFF] py-[16px] px-[49px] rounded-[999px] font-manrope font-medium bg-[#333333] min-w-[58px] mt-[27px]"
+                    >
+                      <i class="ri-arrow-drop-right-line"></i> Discover
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="overflow-hidden pt-[70px] px-[40px] relative">
+                <img
+                  src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/01/Ooze-40-1.jpg"
+                  alt=""
+                  class="w-full h-full object-cover rounded-[25px]"
+                />
+
+                <div
+                  class="overImg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[314px]"
+                >
+                  <img
+                    src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/03/Logo.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-prev absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/80 rounded-full flex items-center justify-center shadow-md hover:bg-white transition"
+          >
+            &#10094;
+            <!-- ← arrow -->
+          </div>
+          <div
+            class="swiper-button-next absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/80 rounded-full flex items-center justify-center shadow-md hover:bg-white transition mt-16"
+          >
+            &#10095;
+            <!-- → arrow -->
+          </div>
         </div>
-        <div class="logo w-[47px] h-auto">
-          <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
-            alt="" class="w-full h-full object-contain" />
+
+        <div class="grid grid-cols-12 pt-[150px] pb-[50px] items-end">
+          <div class="col-span-5 w-[693px] h-[366px]">
+            <img
+              src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/Logo.svg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="col-span-7">
+            <h2
+              class="text-[100px] leading-[1.1em] text-[#111111] font-normal tracking-[-0.05em] font-sora"
+            >
+              Unleashing the <br />
+              Potential of <span class="text-[#BC5362]">Artificial </span>
+              <br />
+              <span class="text-[#716193]">Inelegance </span>
+              for <br />
+              Intelligent Solutions
+            </h2>
+            <ul class="flex items-center gap-[65px] mt-[64px]">
+              <li class="w-[131px]">
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_3.png"
+                  alt=""
+                  class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer"
+                />
+              </li>
+              <li class="w-[131px]">
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_4.png"
+                  alt=""
+                  class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer"
+                />
+              </li>
+              <li class="w-[131px]">
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_5.png"
+                  alt=""
+                  class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer"
+                />
+              </li>
+              <li class="w-[131px]">
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_6.png"
+                  alt=""
+                  class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="tabs">
-        <ul class="flex items-center gap-[17px] uppercase font-manrope">
-          <li
-            class="py-[13px] bg-[#333] cursor-pointer duration-300 text-[#f5f5f5] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center">
-            Home
-          </li>
-          <li
-            class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center">
-            Pages
-          </li>
-          <li
-            class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center">
-            Services
-          </li>
-          <li
-            class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center">
-            Shop
-          </li>
-          <li
-            class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center">
-            blog
-          </li>
-          <li
-            class="py-[13px] hover:bg-[#F2F0F4] duration-300 cursor-pointer text-[#333] font-bold leading-[40px] h-[40px] px-[22px] text-[14px] rounded-[999px] flex items-center justify-center">
-            Contacts
-          </li>
-        </ul>
-      </div>
-      <div class="actions">
-        <ul class="flex items-center">
-          <li class="h-[20px] my-[10px] mx-[15px]">
-            <i class="ri-search-line text-[20px]"></i>
-          </li>
-          <li
-            class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)] hover:[background:linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]">
+      </section>
+      <section class="max-w-[1440px] mx-auto px-[40px] mt-[130px] mb-29">
+        <div class="heading flex items-end justify-between">
+          <div>
             <span
-              class="block rounded-[999px] font-manrope bg-white hover:bg-transparent transition-colors duration-300 font-semibold min-w-[158px] px-[18px] py-[15px] text-center">
-              Get in touch
+              class="mb-[16px] text-[1rem] font-manrope leading-[1.75em] font-medium"
+              >/ services /</span
+            >
+            <h2
+              class="text-[#111111] font-sora text-[60px] leading-[1.16666em] tracking-[-0.05em] font-normal w-[700px]"
+            >
+              Special neural features for your services
+            </h2>
+          </div>
+          <button
+            class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[1px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)] hover:border-none"
+          >
+            <span
+              class="block rounded-[999px] font-manrope text-[14px] bg-white hover:bg-[#F14F44] transition-colors duration-300 font-medium min-w-[158px] px-[24px] py-[10px] text-center"
+            >
+              <i class="ri-arrow-right-s-line"></i> Explore more
             </span>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="pt-[80px] bg-[#F0F2F4]">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide flex flex-col items-center justify-center">
-            <div class="container max-w-[1340px] px-[40px] mx-auto">
-              <div class="grid grid-cols-12 items-end">
-                <div class="left col-span-8">
-                  <h2
-                    class="text-[80px] text-[#333333] leading-[1.125] font-normal tracking-[-2.4px] font-sora w-[700px] text-left">
-                    Harness the Power of
-                    <span class="text-[#62639B]">Artificial</span>
-                    <span class="text-[#C4515C]"> Intelligence</span>
-                  </h2>
-                </div>
-                <div class="right col-span-4">
-                  <p class="text-[16px] text-left font-medium leading-[1.875em] font-manrope text-[#333333]">
-                    Highlight the potential benefits of Neural Networks, such
-                    as improved decision-making, predictive analytics, and
-                    automation.
-                  </p>
-                  <button
-                    class="leading-[27px] text-[16px] hover:bg-[#E74D43] duration-300 cursor-pointer text-[#FFFFFF] py-[16px] px-[49px] rounded-[999px] font-manrope font-medium bg-[#333333] min-w-[58px] mt-[27px]">
-                    <i class="ri-arrow-drop-right-line"></i> Discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="overflow-hidden pt-[70px] px-[40px] relative">
-              <img src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/01/Ooze-40-1.jpg" alt=""
-                class="w-full h-full object-cover rounded-[25px]" />
-
-              <div class="overImg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[314px]">
-                <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/03/Logo.png"
-                  alt="" class="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide flex flex-col">
-            <div class="container max-w-[1340px] px-[40px] mx-auto">
-              <div class="w-full flex items-end justify-end">
-                <h2
-                  class="text-[80px] text-[#333333] leading-[1.125] font-normal tracking-[-2.4px] font-sora w-full text-left">
-                  Revolutionize your business <br />
-                  with cutting-edge<span class="text-[#D3878F]"> Neural</span>
-                  <br /><span class="text-[#575EA8]"> Network</span>
-                  solutions
-                </h2>
-              </div>
-            </div>
-            <div class="overflow-hidden pt-[70px] px-[40px] relative">
-              <img
-                src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/meet-neuro-page-title-bg.jpg"
-                alt="" class="w-full h-full object-cover rounded-[25px]" />
-
-              <div class="overImg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[314px]">
-                <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/03/Logo.png"
-                  alt="" class="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide flex flex-col">
-            <div class="container max-w-[1340px] px-[40px] mx-auto">
-              <div class="grid grid-cols-12 items-end">
-                <div class="left col-span-8">
-                  <h2
-                    class="text-[80px] text-[#333333] leading-[1.125] font-normal tracking-[-2.4px] font-sora w-[700px] text-left">
-                    Harness the Power of
-                    <span class="text-[#62639B]">Artificial</span>
-                    <span class="text-[#C4515C]"> Intelligence</span>
-                  </h2>
-                </div>
-                <div class="right col-span-4">
-                  <p class="text-[16px] text-left font-medium leading-[1.875em] font-manrope text-[#333333]">
-                    Highlight the potential benefits of Neural Networks, such
-                    as improved decision-making, predictive analytics, and
-                    automation.
-                  </p>
-                  <button
-                    class="leading-[27px] text-[16px] hover:bg-[#E74D43] duration-300 cursor-pointer text-[#FFFFFF] py-[16px] px-[49px] rounded-[999px] font-manrope font-medium bg-[#333333] min-w-[58px] mt-[27px]">
-                    <i class="ri-arrow-drop-right-line"></i> Discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="overflow-hidden pt-[70px] px-[40px] relative">
-              <img src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/01/Ooze-40-1.jpg" alt=""
-                class="w-full h-full object-cover rounded-[25px]" />
-
-              <div class="overImg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[314px]">
-                <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/03/Logo.png"
-                  alt="" class="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
+          </button>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-
-      <div class="grid grid-cols-12 pt-[150px] pb-[50px] items-end">
-        <div class="col-span-5 w-[693px] h-[366px]">
-          <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/Logo.svg" alt=""
-            class="w-full h-full object-cover" />
-        </div>
-        <div class="col-span-7">
-          <h2 class="text-[100px] leading-[1.1em] text-[#111111] font-normal tracking-[-0.05em] font-sora">
-            Unleashing the <br />
-            Potential of <span class="text-[#BC5362]">Artificial </span>
-            <br />
-            <span class="text-[#716193]">Inelegance </span>
-            for <br />
-            Intelligent Solutions
-          </h2>
-          <ul class="flex items-center gap-[65px] mt-[64px]">
-            <li class="w-[131px]">
-              <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_3.png"
-                alt="" class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer" />
-            </li>
-            <li class="w-[131px]">
-              <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_4.png"
-                alt="" class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer" />
-            </li>
-            <li class="w-[131px]">
-              <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_5.png"
-                alt="" class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer" />
-            </li>
-            <li class="w-[131px]">
-              <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/01/partners_6.png"
-                alt="" class="w-full h-full object-contain opacity-40 hover:opacity-100 duration-300 cursor-pointer" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="max-w-[1440px] mx-auto px-[40px] mt-[130px] mb-29">
-      <div class="heading flex items-end justify-between">
-        <div>
-          <span class="mb-[16px] text-[1rem] font-manrope leading-[1.75em] font-medium">/ services /</span>
-          <h2 class="text-[#111111] font-sora text-[60px] leading-[1.16666em] tracking-[-0.05em] font-normal w-[700px]">
-            Special neural features for your services
-          </h2>
-        </div>
-        <button
-          class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[1px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)] hover:border-none">
-          <span
-            class="block rounded-[999px] font-manrope text-[14px] bg-white hover:bg-[#F14F44] transition-colors duration-300 font-medium min-w-[158px] px-[24px] py-[10px] text-center">
-            <i class="ri-arrow-right-s-line"></i> Explore more
-          </span>
-        </button>
-      </div>
-      <div class="grid grid-cols-3 gap-10 mt-[37px]">
-        <div class="relative cart bg-cover bg-no-repeat bg-top-left rounded-[25px] h-[566px]" style="
+        <div class="grid grid-cols-3 gap-10 mt-[37px]">
+          <div
+            class="relative cart bg-cover bg-no-repeat bg-top-left rounded-[25px] h-[566px]"
+            style="
               background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/01/Ooze-25-6.jpg);
-            ">
-          <div class="absolute top-0 content px-[40px] pb-[90px] pt-[64px]">
-            <h2 class="font-sora text-[25px] leading-[1.4em] text-white w-[300px] mb-[12px]">
-              AI Strategy and Consulting
-            </h2>
-            <p class="text-[16px] font-medium text-white font-manrope">
-              Provide expert guidance on developing an AI strategy and
-              integrating AI into your business processes
-            </p>
-          </div>
-
-          <div
-            class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px]  h-[80px] bottom-0 right-0 absolute">
-            <button
-              class=" cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300">
-              <i class="ri-arrow-right-s-line text-white"></i>
-            </button>
-          </div>
-        </div>
-        <div class="relative cart bg-cover bg-no-repeat bg-top-left rounded-[25px] h-[566px] bg-[#161313]" style="
-            background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/services-bg.svg);
-          ">
-          <div class="absolute bottom-0 content px-[40px] pb-[90px] pt-[64px]">
-            <h2 class="font-sora text-[25px] leading-[1.4em] text-white w-[300px] mb-[12px]">
-              Machine Learning Solutions
-            </h2>
-            <p class="text-[16px] font-medium text-white font-manrope">
-              Develop and deploy custom machine learning models to extract insights and make predictions from your data.
-            </p>
-          </div>
-
-          <div
-            class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px]  h-[80px] bottom-0 right-0 absolute">
-            <button
-              class=" cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300">
-              <i class="ri-arrow-right-s-line text-white"></i>
-            </button>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 gap-[33px]">
-          <div class="relative cart bg-[#E9EBED] rounded-[25px] h-[352px] ">
-            <div class="  absolute bottom-0 w-full h-auto    ">
-
-              <img src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Group-18418.png" alt=""
-                class="w-[210px] h-[180px] object-contian">
-
-            </div>
-            <div class="absolute right-4 bottom-22">
-              <div class="">
-                <ul class="flex items-start flex-col gap-0">
-                  <li> <span class="count ">250+ </span></li>
-                  <li>
-                    <p class="text-[16px] leading-[24px] font-semibold text-[#11110E]">Active users every day</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="absolute top-0 content px-[40px]  pt-[64px]">
-              <h2 class="font-sora text-[25px] leading-[1.4em] text-[#111111] w-[300px] mb-[12px]">
-                Natural Language
-                Processing
+            "
+          >
+            <div class="absolute top-0 content px-[40px] pb-[90px] pt-[64px]">
+              <h2
+                class="font-sora text-[25px] leading-[1.4em] text-white w-[300px] mb-[12px]"
+              >
+                AI Strategy and Consulting
               </h2>
-
+              <p class="text-[16px] font-medium text-white font-manrope">
+                Provide expert guidance on developing an AI strategy and
+                integrating AI into your business processes
+              </p>
             </div>
+
             <div
-              class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px]  h-[80px] bottom-0 right-0 absolute">
+              class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px] h-[80px] bottom-0 right-0 absolute"
+            >
               <button
-                class=" cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300">
-                <i class="ri-arrow-right-s-line"></i>
-              </button>
-            </div>
-          </div>
-
-
-          <div class="relative cart bg-cover bg-no-repeat bg-top-left rounded-[25px] h-[181.188px] bg-[#161313]" style="
-        background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Rectangle-1089.jpg);
-      ">
-            <div
-              class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 content px-[20px] pt-[70px] flex items-center justify-center flex-col">
-              <img
-                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/OpenAI_Logo-1.png"
-                alt="">
-              <p class="text-white">Powered by</p>
-            </div>
-
-            <div
-              class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px]  h-[80px] bottom-0 right-0 absolute">
-              <button
-                class=" cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300">
+                class="cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300"
+              >
                 <i class="ri-arrow-right-s-line text-white"></i>
               </button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="relative cart bg-cover bg-no-repeat bg-center rounded-[25px] h-[291px] mt-[31px]" style="
-      background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Ooze-36-1.jpg);
-    ">
-        <div class="absolute top-0 content px-[40px] pb-[90px] pt-[64px] flex items-center gap-[79px]">
-          <div>
-            <h2 class="font-sora text-[25px] leading-[1.4em] text-white w-[300px] mb-[12px]">
-              AI Integration and Deployment
-            </h2>
-            <p class="text-[16px] font-medium text-white font-manrope w-[350px]">
-              Assist in seamlessly integrating AI solutions into your existing systems and deploying them at scale.
-            </p>
-          </div>
-          <ul class="flex items-end  gap-[42px]">
-            <li>
-              <img
-                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/Messenger-Logo-1.png"
-                alt="" class="max-w-[49px] h-auto object-contain">
-            </li>
-            <li>
-              <img
-                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/skype-logo-vector-icon-template-clipart-download-0-1.png"
-                alt="" class="max-w-[49px] h-auto object-contain">
-            </li>
-            <li>
-              <img
-                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/Telegram-Symbol-1.png"
-                alt="" class="max-w-[49px] h-auto object-contain">
-            </li>
-            <li>
-              <img src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/discord-1.png"
-                alt="" class="max-w-[49px] h-auto object-contain">
-            </li>
-          </ul>
-        </div>
+          <div
+            class="relative cart bg-cover bg-no-repeat bg-top-left rounded-[25px] h-[566px] bg-[#161313]"
+            style="
+              background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/services-bg.svg);
+            "
+          >
+            <div
+              class="absolute bottom-0 content px-[40px] pb-[90px] pt-[64px]"
+            >
+              <h2
+                class="font-sora text-[25px] leading-[1.4em] text-white w-[300px] mb-[12px]"
+              >
+                Machine Learning Solutions
+              </h2>
+              <p class="text-[16px] font-medium text-white font-manrope">
+                Develop and deploy custom machine learning models to extract
+                insights and make predictions from your data.
+              </p>
+            </div>
 
+            <div
+              class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px] h-[80px] bottom-0 right-0 absolute"
+            >
+              <button
+                class="cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300"
+              >
+                <i class="ri-arrow-right-s-line text-white"></i>
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-[33px]">
+            <div class="relative cart bg-[#E9EBED] rounded-[25px] h-[352px]">
+              <div class="absolute bottom-0 w-full h-auto">
+                <img
+                  src="https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Group-18418.png"
+                  alt=""
+                  class="w-[210px] h-[180px] object-contian"
+                />
+              </div>
+              <div class="absolute right-4 bottom-22">
+                <div class="">
+                  <ul class="flex items-start flex-col gap-0">
+                    <li><span class="count">250+ </span></li>
+                    <li>
+                      <p
+                        class="text-[16px] leading-[24px] font-semibold text-[#11110E]"
+                      >
+                        Active users every day
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="absolute top-0 content px-[40px] pt-[64px]">
+                <h2
+                  class="font-sora text-[25px] leading-[1.4em] text-[#111111] w-[300px] mb-[12px]"
+                >
+                  Natural Language Processing
+                </h2>
+              </div>
+              <div
+                class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px] h-[80px] bottom-0 right-0 absolute"
+              >
+                <button
+                  class="cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300"
+                >
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="relative cart bg-cover bg-no-repeat bg-top-left rounded-[25px] h-[181.188px] bg-[#161313]"
+              style="
+                background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Rectangle-1089.jpg);
+              "
+            >
+              <div
+                class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 content px-[20px] pt-[70px] flex items-center justify-center flex-col"
+              >
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/OpenAI_Logo-1.png"
+                  alt=""
+                />
+                <p class="text-white">Powered by</p>
+              </div>
+
+              <div
+                class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px] h-[80px] bottom-0 right-0 absolute"
+              >
+                <button
+                  class="cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300"
+                >
+                  <i class="ri-arrow-right-s-line text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div
-          class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px]  h-[80px] bottom-0 right-0 absolute">
-          <button
-            class=" cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300">
-            <i class="ri-arrow-right-s-line text-white"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="px-1">
-      <marquee scrollamount="10" direction="right" class="bg-[#F14F44] rotate-z-[2.07deg] ">
-        <div class="bg-[#F14F44]">
-          <h2 class="leading-[1.8em] text-[80px] font-sora tracking-[-.03em] text-[#111111]">Artificial Intellegance
-            in
-            shaping the future of technology./Artificial Intellegance in shaping the future of technology./Artificial
-            Intellegance in shaping the future of technology.</h2>
-        </div>
-      </marquee>
-      <marquee scrollamount="10" class="bg-[#1F1F1F] rotate-z-[-2.07deg]">
-        <div class="bg-[#1F1F1F]">
-          <h2 class="leading-[1.8em] text-[80px] font-sora tracking-[-.03em] text-[#fff]">Artificial Intellegance in
-            shaping the future of technology./Artificial Intellegance in shaping the future of technology./Artificial
-            Intellegance in shaping the future of technology.</h2>
-        </div>
-      </marquee>
-      <div class=" px-[40px] bg-no-repeat bg-cover bg-[#1F1F1F] mt-[50px] clip-custom-polygon"
-        style="background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/03/Waves.svg);">
-        <div class="max-w-[1340px] px-[40px] mx-auto pt-[100px] pb-[40px]">
-          <div class="heading">
-            <p class="leading-[1.75em] font-medium text-[1rem] text-white font-manrope">/about/</p>
-            <h3 class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-white w-[600px]">
-              Welcome to new era of Neural networks</h3>
+          class="relative cart bg-cover bg-no-repeat bg-center rounded-[25px] h-[291px] mt-[31px]"
+          style="
+            background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Ooze-36-1.jpg);
+          "
+        >
+          <div
+            class="absolute top-0 content px-[40px] pb-[90px] pt-[64px] flex items-center gap-[79px]"
+          >
+            <div>
+              <h2
+                class="font-sora text-[25px] leading-[1.4em] text-white w-[300px] mb-[12px]"
+              >
+                AI Integration and Deployment
+              </h2>
+              <p
+                class="text-[16px] font-medium text-white font-manrope w-[350px]"
+              >
+                Assist in seamlessly integrating AI solutions into your existing
+                systems and deploying them at scale.
+              </p>
+            </div>
+            <ul class="flex items-end gap-[42px]">
+              <li>
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/Messenger-Logo-1.png"
+                  alt=""
+                  class="max-w-[49px] h-auto object-contain"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/skype-logo-vector-icon-template-clipart-download-0-1.png"
+                  alt=""
+                  class="max-w-[49px] h-auto object-contain"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/Telegram-Symbol-1.png"
+                  alt=""
+                  class="max-w-[49px] h-auto object-contain"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/discord-1.png"
+                  alt=""
+                  class="max-w-[49px] h-auto object-contain"
+                />
+              </li>
+            </ul>
           </div>
-          <div class="grid grid-cols-2"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
-</body>
 
+          <div
+            class="bg-white w-[80px] flex items-center justify-center rounded-tl-[30px] h-[80px] bottom-0 right-0 absolute"
+          >
+            <button
+              class="cursor-pointer font-bold text-[20px] w-[45px] h-[45px] rounded-full bg-[#333333] text-white flex items-center justify-center hover:bg-[#EB4E44] transition-all duration-300"
+            >
+              <i class="ri-arrow-right-s-line text-white"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="px-1">
+          <marquee
+            scrollamount="10"
+            direction="right"
+            class="bg-[#F14F44] rotate-z-[2.07deg]"
+          >
+            <div class="bg-[#F14F44]">
+              <h2
+                class="leading-[1.8em] text-[80px] font-sora tracking-[-.03em] text-[#111111]"
+              >
+                Artificial Intellegance in shaping the future of
+                technology./Artificial Intellegance in shaping the future of
+                technology./Artificial Intellegance in shaping the future of
+                technology.
+              </h2>
+            </div>
+          </marquee>
+          <marquee scrollamount="10" class="bg-[#1F1F1F] rotate-z-[-2.07deg]">
+            <div class="bg-[#1F1F1F]">
+              <h2
+                class="leading-[1.8em] text-[80px] font-sora tracking-[-.03em] text-[#fff]"
+              >
+                Artificial Intellegance in shaping the future of
+                technology./Artificial Intellegance in shaping the future of
+                technology./Artificial Intellegance in shaping the future of
+                technology.
+              </h2>
+            </div>
+          </marquee>
+        </div>
+        <div class="px-[40px] mx-auto">
+          <div
+            class="px-[40px] bg-no-repeat bg-[#1F1F1F] mt-[50px] clip-custom-polygon rounded-3xl bg-[length:49%_auto] bg-bottom-right"
+            style="
+              background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/03/Waves.svg);
+            "
+          >
+            <div class="px-[40px] mx-auto py-[100px]">
+              <div class="heading flex items-center justify-between">
+                <div>
+                  <p
+                    class="leading-[1.75em] font-medium text-[1rem] text-white font-manrope"
+                  >
+                    /about/
+                  </p>
+                  <h3
+                    class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-white w-[600px]"
+                  >
+                    Welcome to new era of Neural networks
+                  </h3>
+                </div>
+                <div class="flex items-start">
+                  <span class="title font-sora">Neuro </span>
+                  <h2
+                    class="text-[25px] font-semibold text-[#FFFFFF] font-manrope"
+                  >
+                    AI
+                  </h2>
+                </div>
+              </div>
+              <div class="grid grid-cols-2">
+                <div
+                  class="mask-logo w-[400px] h-[400px] bg-red-700"
+                  style="
+                    background-image: url('https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/mitchell-luo-mkNOHMD3a-I-unsplash-min.jpg');
+                  "
+                ></div>
+                <div class="flex flex-col items-start gap-9 mt-[20%] pl-[50px]">
+                  <p class="text-white font-manrope w-[600px]">
+                    Artificial Intelligence refers to the development of
+                    computer systems that can perform tasks that would typically
+                    require human intelligence. It involves the creation of
+                    algorithms and models that enable machines to learn, reason,
+                    perceive, and make decisions.
+                  </p>
+                  <p class="text-white font-manrope w-[600px]">
+                    There are generally two types of AI: Narrow or Weak AI,
+                    which is designed to perform specific tasks, and General or
+                    Strong AI, which possesses human-level intelligence and can
+                    handle a wide range of tasks.
+                  </p>
+                  <button
+                    class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] border border-white hover:border-[#F14F44]"
+                  >
+                    <span
+                      class="block rounded-[999px] font-manrope text-white text-[14px] bg-transparent hover:bg-[#F14F44] transition-colors duration-300 font-medium min-w-[158px] px-[24px] py-[10px] text-center"
+                    >
+                      <i class="ri-arrow-right-s-line"></i> Explore more
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-[1340px] mx-auto mt-[150px]">
+        <div class="heading">
+          <p
+            class="leading-[1.75em] font-medium text-[1rem] text-[#111111] font-manrope"
+          >
+            /features/
+          </p>
+          <h3
+            class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-[#111111] w-[800px]"
+          >
+            The unique selling points & advantages of our service
+          </h3>
+        </div>
+        <div class="grid grid-cols-4 pt-[30px] gap-[20px]">
+          <div class="cart">
+            <h2
+              class="text-[20px] leading-[1.75em] font-manrope font-semibold tracking-normal"
+            >
+              Experienced team
+            </h2>
+            <p
+              class="text-[#333333] text-[16px] font-medium font-manrope mt-[9px] w-[310px]"
+            >
+              Emphasize the expertise and knowledge of your team in developing
+              and implementing neural networks
+            </p>
+            <div
+              class="mt-[33px] bg-[#E9EBED] rounded-[15px] w-[56px] h-[56px] flex items-center justify-center"
+            >
+              <svg
+                viewBox="0 0 38 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[38px] h-[38px]"
+              >
+                <g clip-path="url(#clip0_145_13)">
+                  <path
+                    d="M7.51669 17.9125C5.08572 17.9125 3.10815 16.0045 3.10815 13.6599C3.10815 11.3151 5.08572 9.40704 7.51669 9.40704C9.94735 9.40704 11.9246 11.3148 11.9246 13.6599C11.9246 16.0048 9.94735 17.9125 7.51669 17.9125ZM7.51669 10.6006C5.76147 10.6006 4.33396 11.9731 4.33396 13.6599C4.33396 15.3465 5.76147 16.719 7.51669 16.719C9.2713 16.719 10.6988 15.3465 10.6988 13.6599C10.6988 11.9731 9.2713 10.6006 7.51669 10.6006Z"
+                    fill="url(#paint0_linear_145_13)"
+                  ></path>
+                  <path
+                    d="M9.29021 29.6872H1.60199C0.718545 29.6872 0 28.9919 0 28.1373V26.1852C0 22.1891 3.37187 18.9377 7.51674 18.9377C9.14686 18.9377 10.6986 19.4331 12.0028 20.3699C12.2751 20.5657 12.3332 20.9393 12.1321 21.2047C11.931 21.4696 11.5476 21.5261 11.275 21.3306C10.1829 20.5462 8.88351 20.1312 7.51674 20.1312C4.04791 20.1312 1.22581 22.8473 1.22581 26.1852V28.1373C1.22581 28.3337 1.39459 28.4936 1.60199 28.4936H9.29051C9.62869 28.4936 9.90342 28.7609 9.90342 29.0904C9.90342 29.4197 9.62869 29.6872 9.29021 29.6872Z"
+                    fill="url(#paint1_linear_145_13)"
+                  ></path>
+                  <path
+                    d="M36.398 29.2355H28.7098C28.3716 29.2355 28.0969 28.9683 28.0969 28.6388C28.0969 28.3095 28.3716 28.042 28.7098 28.042H36.3983C36.6057 28.042 36.7745 27.8823 36.7745 27.6859V25.7339C36.7745 22.3954 33.9524 19.6799 30.4836 19.6799C29.0348 19.6799 27.6204 20.1656 26.5009 21.048C26.2381 21.2552 25.8524 21.2158 25.639 20.9597C25.4262 20.7035 25.4663 20.3276 25.73 20.1202C27.0668 19.0668 28.755 18.4863 30.4836 18.4863C34.6281 18.4863 38 21.7374 38 25.7339V27.6859C38 28.5403 37.2815 29.2355 36.398 29.2355Z"
+                    fill="url(#paint2_linear_145_13)"
+                  ></path>
+                  <path
+                    d="M30.4833 17.6177C28.0526 17.6177 26.0753 15.7099 26.0753 13.3651C26.0753 11.0202 28.0526 9.11218 30.4833 9.11218C32.9142 9.11218 34.8918 11.0199 34.8918 13.3651C34.8918 15.7102 32.9139 17.6177 30.4833 17.6177ZM30.4833 10.3057C28.7286 10.3057 27.3011 11.6782 27.3011 13.3651C27.3011 15.052 28.7286 16.4241 30.4833 16.4241C32.2385 16.4241 33.666 15.052 33.666 13.3651C33.666 11.6782 32.2382 10.3057 30.4833 10.3057Z"
+                    fill="url(#paint3_linear_145_13)"
+                  ></path>
+                  <path
+                    d="M27.3185 31.629H10.6816C9.57637 31.629 8.67737 30.7601 8.67737 29.6919V26.9463C8.67737 21.4594 13.3077 16.9955 19.0001 16.9955C24.6925 16.9955 29.3228 21.4594 29.3228 26.9463V29.6919C29.3228 30.7601 28.4237 31.629 27.3185 31.629ZM19.0001 18.1894C13.984 18.1894 9.90317 22.118 9.90317 26.9466V29.6922C9.90317 30.1021 10.2524 30.4358 10.6816 30.4358H27.3182C27.7474 30.4358 28.0966 30.1021 28.0966 29.6922V26.9466C28.0969 22.118 24.0161 18.1894 19.0001 18.1894Z"
+                    fill="url(#paint4_linear_145_13)"
+                  ></path>
+                  <path
+                    d="M18.7869 16.2982C15.6637 16.2982 13.1223 13.8473 13.1223 10.8343C13.1223 7.82159 15.6634 5.37097 18.7869 5.37097C21.9107 5.37097 24.4517 7.82188 24.4517 10.8346C24.4517 13.8476 21.9104 16.2982 18.7869 16.2982ZM18.7869 6.56452C16.3395 6.56452 14.3481 8.48014 14.3481 10.8346C14.3481 13.1894 16.3395 15.105 18.7869 15.105C21.2346 15.105 23.2259 13.1894 23.2259 10.8346C23.2259 8.48014 21.2346 6.56452 18.7869 6.56452Z"
+                    fill="url(#paint5_linear_145_13)"
+                  ></path>
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_145_13"
+                    x1="10.7499"
+                    y1="11.32"
+                    x2="2.69112"
+                    y2="12.5658"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_145_13"
+                    x1="10.6194"
+                    y1="21.3553"
+                    x2="-0.525163"
+                    y2="23.2496"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_145_13"
+                    x1="36.3347"
+                    y1="20.9039"
+                    x2="24.9797"
+                    y2="22.8728"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint3_linear_145_13"
+                    x1="33.717"
+                    y1="11.0251"
+                    x2="25.6583"
+                    y2="12.2709"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint4_linear_145_13"
+                    x1="26.5718"
+                    y1="20.2867"
+                    x2="8.06896"
+                    y2="24.1798"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint5_linear_145_13"
+                    x1="22.9421"
+                    y1="7.82859"
+                    x2="12.5865"
+                    y2="9.4298"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <clipPath id="clip0_145_13">
+                    <rect width="38" height="37" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <div class="cart">
+            <h2
+              class="text-[20px] leading-[1.75em] font-manrope font-semibold tracking-normal"
+            >
+              Tailored solutions
+            </h2>
+            <p
+              class="text-[#333333] text-[16px] font-medium font-manrope mt-[9px] w-[310px]"
+            >
+              Mention your ability to customize solutions based on specific
+              business requirements
+            </p>
+            <div
+              class="mt-[33px] bg-[#E9EBED] rounded-[15px] w-[56px] h-[56px] flex items-center justify-center"
+            >
+              <svg
+                viewBox="0 0 29 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[29px] h-[29px]"
+              >
+                <path
+                  d="M25.9793 15.7083C27.7193 15.7083 27.9247 16.9167 28.6436 16.5844C29.1511 16.3608 29.0001 16.6629 29.0001 6.64584C29.0001 6.4856 28.9364 6.33193 28.8231 6.21863C28.7098 6.10533 28.5562 6.04167 28.3959 6.04167H20.1309C20.5246 5.21259 20.638 4.27792 20.4538 3.37877C20.2696 2.47962 19.7979 1.6648 19.1099 1.0573C15.7084 -1.96354 10.5307 1.91521 12.4943 6.04167H6.64593C6.48569 6.04167 6.33202 6.10533 6.21872 6.21863C6.10541 6.33193 6.04176 6.4856 6.04176 6.64584V14.9108C5.21267 14.5171 4.27801 14.4038 3.37886 14.588C2.47971 14.7722 1.66488 15.2439 1.05739 15.9319C-1.96345 19.3635 1.92739 24.505 6.04176 22.5777V28.3958C6.04176 28.5561 6.10541 28.7097 6.21872 28.8231C6.33202 28.9364 6.48569 29 6.64593 29H13.618C13.7348 28.9997 13.8489 28.9656 13.9467 28.9019C14.0445 28.8381 14.1217 28.7473 14.169 28.6406C14.2162 28.5339 14.2316 28.4157 14.2132 28.3005C14.1947 28.1852 14.1433 28.0777 14.0651 27.9911C13.7596 27.6376 13.5402 27.218 13.4243 26.7654C13.3083 26.3128 13.2989 25.8394 13.3968 25.3826C13.4948 24.9257 13.6973 24.4978 13.9886 24.1325C14.2799 23.7672 14.652 23.4744 15.0755 23.2772C15.4991 23.0799 15.9626 22.9837 16.4297 22.9959C16.8968 23.0082 17.3547 23.1286 17.7673 23.3477C18.18 23.5668 18.5362 23.8787 18.8079 24.2588C19.0797 24.6388 19.2596 25.0768 19.3334 25.5381C19.6174 27.556 18.1251 27.8763 18.4876 28.6435C18.7111 29.151 18.4091 29 28.4261 29C28.5864 29 28.74 28.9364 28.8533 28.8231C28.9667 28.7097 29.0303 28.5561 29.0303 28.3958V21.4238C29.03 21.307 28.9959 21.1929 28.9322 21.0951C28.8684 20.9973 28.7776 20.9201 28.6709 20.8728C28.5642 20.8255 28.446 20.8102 28.3307 20.8286C28.2155 20.847 28.108 20.8985 28.0213 20.9767C27.6576 21.3033 27.22 21.5368 26.7461 21.6571C26.2722 21.7774 25.7762 21.7808 25.3006 21.6671C24.8251 21.5535 24.3843 21.3261 24.016 21.0045C23.6478 20.6829 23.3631 20.2767 23.1863 19.8209C23.0096 19.365 22.9462 18.873 23.0016 18.3873C23.0569 17.9015 23.2293 17.4364 23.504 17.0319C23.7786 16.6275 24.1474 16.2957 24.5785 16.0652C25.0097 15.8346 25.4904 15.7122 25.9793 15.7083ZM22.8074 15.9319C19.7866 19.3635 23.6774 24.505 27.7918 22.5777V27.7917H20.1309C22.0945 23.6652 16.9409 19.7865 13.5153 22.8073C12.8273 23.4148 12.3556 24.2296 12.1714 25.1288C11.9872 26.0279 12.1005 26.9626 12.4943 27.7917H7.25009V21.4238C7.24982 21.307 7.21573 21.1929 7.15195 21.0951C7.08816 20.9973 6.99742 20.9201 6.89069 20.8728C6.78396 20.8255 6.66581 20.8102 6.55054 20.8286C6.43526 20.847 6.3278 20.8985 6.24114 20.9767C5.87642 21.3042 5.43748 21.5381 4.96219 21.6581C4.4869 21.7781 3.98955 21.7806 3.51306 21.6655C3.03657 21.5503 2.59527 21.3209 2.22724 20.9971C1.85921 20.6733 1.57551 20.2648 1.40062 19.8069C1.22574 19.3489 1.16493 18.8553 1.22345 18.3686C1.28196 17.8819 1.45804 17.4167 1.73648 17.0133C2.01493 16.6098 2.38737 16.2802 2.82166 16.0529C3.25596 15.8255 3.73906 15.7073 4.22926 15.7083C5.96926 15.7083 6.17468 16.9167 6.89364 16.5844C7.39509 16.3608 7.25009 16.6267 7.25009 7.25001C13.9443 7.25001 13.9503 7.39501 14.1678 6.89355C14.5061 6.1323 13.038 5.83626 13.322 3.78813C13.39 3.32172 13.5662 2.87771 13.8366 2.4916C14.1069 2.10548 14.4639 1.78799 14.8788 1.5645C15.2938 1.34101 15.7554 1.21774 16.2265 1.20453C16.6977 1.19133 17.1654 1.28856 17.5923 1.48845C18.0191 1.68834 18.3933 1.98534 18.6848 2.35571C18.9764 2.72607 19.1772 3.15952 19.2712 3.62138C19.3653 4.08324 19.35 4.56071 19.2265 5.01559C19.103 5.47047 18.8748 5.89015 18.5601 6.24105C18.4819 6.32771 18.4304 6.43518 18.412 6.55045C18.3936 6.66573 18.4089 6.78387 18.4562 6.8906C18.5035 6.99733 18.5807 7.08808 18.6785 7.15186C18.7763 7.21564 18.8904 7.24973 19.0072 7.25001H27.7918V14.9108C26.9627 14.5171 26.028 14.4038 25.1289 14.588C24.2297 14.7722 23.4149 15.2439 22.8074 15.9319Z"
+                  fill="url(#paint0_linear_146_24)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_146_24"
+                    x1="25.1599"
+                    y1="6.5126"
+                    x2="-1.43354"
+                    y2="10.4796"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="cart">
+            <h2
+              class="text-[20px] leading-[1.75em] font-manrope font-semibold tracking-normal"
+            >
+              Cutting-edge technology
+            </h2>
+            <p
+              class="text-[#333333] text-[16px] font-medium font-manrope mt-[9px] w-[310px]"
+            >
+              Highlight your use of the latest tools and techniques in neural
+              network development
+            </p>
+            <div
+              class="mt-[33px] bg-[#E9EBED] rounded-[15px] w-[56px] h-[56px] flex items-center justify-center"
+            >
+              <svg
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[23px] h-[23px]"
+              >
+                <path
+                  d="M-8.63075e-05 0.718731C-8.63075e-05 0.317664 0.317577 0 0.718645 0H7.17665C7.58489 0 7.88893 0.322025 7.88965 0.730262C7.88965 1.13778 7.58489 1.43752 7.17665 1.43752H1.43744L1.44897 7.20404C1.44897 7.61228 1.13847 7.92277 0.730236 7.92277C0.321998 7.92206 0.0115042 7.61228 0.0115042 7.20404L-2.6226e-05 0.729545C-2.6226e-05 0.727394 0.00069046 0.72596 0.00069046 0.724527C0.000630379 0.722316 -8.63075e-05 0.720882 -8.63075e-05 0.718731Z"
+                  fill="url(#paint0_linear_55_626)"
+                ></path>
+                <path
+                  d="M15.801 0H22.259C22.2611 0 22.2626 0.000716939 22.2647 0.000716939C22.2662 0.000716939 22.2683 0 22.2697 0C22.6708 0 22.9885 0.317664 22.9885 0.718731L23 7.19323C23 7.60147 22.678 7.90622 22.2697 7.90622C21.8622 7.90622 21.5625 7.60147 21.5625 7.19323L21.551 1.43746H15.801C15.3928 1.43746 15.0823 1.12697 15.0823 0.718731C15.083 0.310494 15.3935 0 15.801 0Z"
+                  fill="url(#paint1_linear_55_626)"
+                ></path>
+                <path
+                  d="M15.8233 21.5625H21.5625V15.8125C21.5625 15.4042 21.873 15.0938 22.2812 15.0938C22.6894 15.0938 23 15.4042 23 15.8125V22.2704C23 22.2726 22.9993 22.274 22.9993 22.2754C22.9993 22.2776 23 22.279 23 22.2812C23 22.6823 22.6823 22.9999 22.2813 22.9999H15.8233C15.4151 22.9999 15.111 22.6779 15.1103 22.2697C15.1103 21.8622 15.415 21.5625 15.8233 21.5625Z"
+                  fill="url(#paint2_linear_55_626)"
+                ></path>
+                <path
+                  d="M0.730287 15.1104C1.13852 15.1104 1.43827 15.4152 1.43755 15.8234V21.5626H7.18752C7.59576 21.5626 7.90625 21.8731 7.90625 22.2814C7.90625 22.6896 7.59576 23.0001 7.18752 23.0001H0.72957C0.72742 23.0001 0.725987 22.9994 0.724553 22.9994C0.722402 22.9987 0.720968 23.0001 0.718817 23.0001C0.31775 23.0001 8.58307e-05 22.6824 8.58307e-05 22.2814V15.8234C2.57492e-05 15.4152 0.32205 15.1104 0.730287 15.1104Z"
+                  fill="url(#paint3_linear_55_626)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_55_626"
+                    x1="1.0512"
+                    y1="1.78189"
+                    x2="8.27584"
+                    y2="2.85483"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_55_626"
+                    x1="16.1373"
+                    y1="1.77816"
+                    x2="23.3858"
+                    y2="2.86072"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint2_linear_55_626"
+                    x1="16.1616"
+                    y1="16.8719"
+                    x2="23.3855"
+                    y2="17.947"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="paint3_linear_55_626"
+                    x1="1.05356"
+                    y1="16.8849"
+                    x2="8.29127"
+                    y2="17.9665"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="cart">
+            <h2
+              class="text-[20px] leading-[1.75em] font-manrope font-semibold tracking-normal"
+            >
+              Proven track record
+            </h2>
+            <p
+              class="text-[#333333] text-[16px] font-medium font-manrope mt-[9px] w-[310px]"
+            >
+              Showcase successful case studies or client testimonials that
+              demonstrate the effectiveness of your services
+            </p>
+            <div
+              class="mt-[33px] bg-[#E9EBED] rounded-[15px] w-[56px] h-[56px] flex items-center justify-center"
+            >
+              <svg
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[26px] h-[26px]"
+              >
+                <path
+                  d="M19.5846 0.813875C19.6218 0.812131 19.6592 0.813356 19.6963 0.817539L24.5669 1.41995C24.9535 1.46488 25.2301 1.81533 25.1839 2.20181L24.5888 7.07425C24.5432 7.46339 24.1882 7.74011 23.7997 7.68948C23.4127 7.64101 23.1392 7.28693 23.1899 6.9003L23.5818 3.71243L13.6959 11.4413L13.7014 22.7939L15.9792 20.5215C16.3413 20.1934 16.7198 20.2804 16.968 20.5215C17.2389 20.7955 17.2389 21.2363 16.968 21.5103L13.4945 24.9838C13.2205 25.2546 12.7797 25.2546 12.5057 24.9838L9.03037 21.5103C8.75463 21.2355 8.75463 20.789 9.03037 20.5142C9.30536 20.2372 9.75331 20.2372 10.0283 20.5142L12.297 22.7829L12.2897 11.4615C9.01917 8.85915 5.71754 6.28996 2.41844 3.71426L2.81028 6.9003C2.86103 7.28693 2.58746 7.64101 2.20054 7.68948C1.81468 7.73571 1.4645 7.46016 1.41868 7.07425L0.816263 2.20181C0.770077 1.81597 1.04561 1.46581 1.4315 1.41995L6.30393 0.817537C6.69043 0.771352 7.0409 1.04796 7.08579 1.4346C7.13222 1.81793 6.86083 2.16697 6.47788 2.21646L3.28452 2.60648C6.52036 5.13222 9.76427 7.65492 12.9818 10.2127L22.7138 2.60648L19.5223 2.21646C19.1386 2.16789 18.8662 1.81856 18.9126 1.4346C18.953 1.09034 19.2382 0.82686 19.5846 0.813875Z"
+                  fill="url(#paint0_linear_55_636)"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_55_636"
+                    x1="4.05948"
+                    y1="6.29448"
+                    x2="26.378"
+                    y2="9.62338"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#E24C4A"></stop>
+                    <stop offset="1" stop-color="#386BB7"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-[1340px] mx-auto container mt-[150px]">
+        <div class="grid grid-cols-12">
+          <div class="col-span-4">
+            <div class="heading">
+              <p
+                class="leading-[1.75em] font-medium text-[1rem] text-[#111111] font-manrope mb-[21px]"
+              >
+                / pricing /
+              </p>
+              <h3
+                class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-[#111111]"
+              >
+                Simple and flexible. <br />
+                Only pay for what you use.
+              </h3>
+            </div>
+          </div>
+          <div class="col-span-8">
+            <div class="basicPlan border border-gray-600 rounded-[25px]">
+              <div
+                class="grid grid-cols-3 pt-[95px] px-[75px] pb-[80px] gap-[40px]"
+              >
+                <div class="left">
+                  <h2
+                    class="mb-[16px] font-sora text-[40px] text-[#111111] leading-[1em] font-normal tracking-[-.03em]"
+                  >
+                    Basic
+                  </h2>
+                  <p
+                    class="leading-[1.5em] tracking-[-.03em] font-semibold text-[#333333] text-[16px] font-manrope"
+                  >
+                    Great for private individuals
+                  </p>
+                </div>
+                <div class="center">
+                  <ul
+                    class="list-disc font-manrope text-[16px] leading-[1.875em] font-medium text-[#333333] flex flex-col items-start gap-[10px]"
+                  >
+                    <li>1 User</li>
+                    <li>Unlimited Projects</li>
+                    <li>Download prototypes</li>
+                    <li>1 Gb workspace</li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <h3
+                    class="text-[60px] leading-[1em] font-sora text-[#11110F] font-semibold mb-[25px]"
+                  >
+                    Free
+                  </h3>
+                  <button
+                    class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[1px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)] hover:border-none"
+                  >
+                    <span
+                      class="block rounded-[999px] font-manrope text-[14px] bg-white hover:bg-[#F14F44] transition-colors duration-300 font-medium min-w-[158px] px-[34px] py-[11px] text-center"
+                    >
+                      <i class="ri-arrow-right-s-line"></i> Get started
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="premium relative rounded-[25px] bg-no-repeat bg-[#E9EBED] bg-bottom-left border border-[#E9EBED00] bg-[length:29%_auto] mt-[10px]"
+              style="
+                background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/Waves-1.svg);
+              "
+            >
+              <div
+                class="absolute bg-white px-[43px] py-[8px] rounded-b-3xl -top-[1px] left-[6%]"
+              >
+                <h2 class="text-[#333333] leading-[1.5em] tracking-[-.03em]">
+                  Popular
+                </h2>
+              </div>
+              <div
+                class="grid grid-cols-3 pt-[95px] px-[75px] pb-[80px] gap-[40px]"
+              >
+                <div class="left">
+                  <h2
+                    class="mb-[16px] font-sora text-[40px] text-[#111111] leading-[1em] font-normal tracking-[-.03em]"
+                  >
+                    Premium
+                  </h2>
+                  <p
+                    class="leading-[1.5em] tracking-[-.03em] font-semibold text-[#333333] text-[16px] font-manrope"
+                  >
+                    14 days free period
+                  </p>
+                </div>
+                <div class="center">
+                  <ul
+                    class="list-disc font-manrope text-[16px] leading-[1.875em] font-medium text-[#333333] flex flex-col items-start gap-[10px]"
+                  >
+                    <li>3 Users</li>
+                    <li>Unlimited Projects</li>
+                    <li>Download prototypes</li>
+                    <li>100 Gb workspace</li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <h3
+                    class="text-[60px] leading-[1em] font-sora text-[#11110F] font-semibold mb-[25px]"
+                  >
+                    $99<span class="text-[20px] font-bold">/mo</span>
+                  </h3>
+                  <button
+                    class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] border-none"
+                  >
+                    <span
+                      class="block rounded-[999px] font-manrope text-[14px] bg-[#333333] text-white hover:bg-[#F14F44] transition-colors duration-300 font-medium min-w-[158px] px-[34px] py-[11px] text-center"
+                    >
+                      <i class="ri-arrow-right-s-line"></i> Get started
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
