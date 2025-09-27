@@ -50,7 +50,6 @@
   -webkit-text-stroke-color: #fff;
   stroke: #fff;
   line-height: 1em;
-  
 }
 .title {
   font-size: 170px;
@@ -78,4 +77,9 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
+}
+.colorText {
+  background: linear-gradient(262deg, #e24c4a 14.51%, #386bb7 95.96%);
+  -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
 }
