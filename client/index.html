@@ -22,11 +22,22 @@
 
   <body>
     <div
+      class="loading fixed w-full h-full bg-white z-[99999] flex items-center justify-center"
+    >
+      <div>
+        <img
+          src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
+          alt=""
+          class="heart-pulse "
+        />
+      </div>
+    </div>
+    <div
       id="contactModals"
-      class="contactModal fixed h-full w-full  z-[9999] top-0 left-0 hidden transition-all duration-300 ease-in-out opacity-0 scale-95"
+      class="contactModal fixed h-full w-full z-[9999] bg-[#0000004d] top-0 left-0 hidden transition-all duration-300 ease-in-out opacity-0 scale-95"
     >
       <div
-        class="absolute top-5 left-5 bg-[#1F1F1F] w-[400px] h-[910px] rounded-[25px]"
+        class="absolute top-5 left-5 bg-[#1F1F1F] w-[400px] h-[700px] rounded-[25px]"
       >
         <div
           class="py-[68px] px-[62px] relative h-full w-full flex items-start flex-col justify-between overflow-hidden"
@@ -100,8 +111,17 @@
         </div>
       </div>
     </div>
+    <div class="scrollUp fixed bottom-[62px] right-[57px] z-[9999] hidden">
+      <div
+        id="scrollBtn"
+        class="w-[50px] h-[73px] text-[#111111] bg-[#f14f44] hover:bg-[#f14f44d6] duration-300 cursor-pointer rounded-[30px] flex items-center justify-center"
+      >
+        <i class="ri-arrow-up-s-line text-[20px] font-bold"></i>
+      </div>
+    </div>
     <header
-      class="mx-auto px-[40px] sticky top-0 left-[20px] right-[20px] pt-[10px] bg-transparent z-[999]"
+      id="mainHeader"
+      class="mx-auto px-[40px] sticky top-0 left-[20px] right-[20px] pt-[10px] bg-[#F0F2F4] z-[999]"
     >
       <div>
         <nav
@@ -692,7 +712,7 @@
               <div
                 class="grid grid-cols-2 items-start px-[40px] mx-auto max-w-[1340px]"
               >
-                <div class="heading">
+                <div class="heading relative">
                   <div>
                     <p
                       class="leading-[1.75em] font-medium text-[1rem] text-white font-manrope"
@@ -705,10 +725,11 @@
                       Welcome to new era of Neural networks
                     </h3>
                   </div>
-                  <div class="diagonal-mask">
+                  <div class="absolute top-[238px] -left-[156px]">
                     <img
-                      src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/02/mitchell-luo-mkNOHMD3a-I-unsplash-min.jpg"
+                      src="./src/assets/converted_image.jpg"
                       alt=""
+                      class="w-[500px] h-[500px] object-cover"
                     />
                   </div>
                 </div>
@@ -1178,17 +1199,17 @@
       </section>
       <section class="mx-auto px-[40px] mt-[150px]">
         <div
-          class="bg-no-repeat bg-cover pt-[135px] rounded-[25px] bg-fixed"
+          class="bg-no-repeat bg-cover pt-[135px] h-[700px] rounded-[25px] bg-fixed"
           style="
             background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/02/testimonials-bg.jpg);
           "
         >
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-2 h-full">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="left bg-[#1F1F1F] p-[17%] rounded-[25px] flex items-start flex-col"
+                    class="left h-full bg-[#1F1F1F] p-[17%] rounded-[25px] flex items-start flex-col"
                   >
                     <div class="logo w-[47px] h-auto mb-[25px]">
                       <img
@@ -1285,7 +1306,7 @@
                 customers say <br />
                 about our AI <br />solutions
               </h3>
-              <div class="mt-[20px]">
+              <div class="mt-[70px]">
                 <span class="countWhite">250 +</span>
                 <h3
                   class="text-[#FFFFFF] text-[20px] leading-[1.5em] font-semibold"
@@ -1315,36 +1336,129 @@
             </div>
             <ul class="w-full h-full mt-[32px] flex flex-col">
               <li
-                class="flex items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[39px] border-b border-gray-800 text-left"
+                id="firstAcc"
+                class="border-b border-gray-800 flex flex-col items-center justify-center"
               >
-                <span>01</span> <span>What is Artificial Intellegance?</span>
-                <span><i class="ri-arrow-right-s-fill"></i></span>
-              </li>
-              <li
-                class="flex items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[39px] border-b border-gray-800 text-left"
-              >
-                <span>02</span>
-                <span
-                  >How does Machine Learning relate to Artificial <br />
-                  Intelligence?</span
+                <div
+                  class="flex w-full items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[37px] text-left cursor-pointer accordion-header"
                 >
-                <span><i class="ri-arrow-right-s-fill"></i></span>
+                  <span>01</span>
+                  <span>What is Artificial Intelligence?</span>
+                  <span
+                    ><i
+                      class="ri-arrow-right-s-fill transition-transform duration-300"
+                    ></i
+                  ></span>
+                </div>
+
+                <div
+                  id="accardion_content"
+                  class="w-[700px] max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <p class="py-4">
+                    Machine Learning is a subset of AI that focuses on
+                    developing algorithms and models that allow computers to
+                    learn from data and improve their performance over time. It
+                    plays a crucial role in enabling AI systems to recognize
+                    patterns, make predictions, and adapt to new information.
+                  </p>
+                </div>
               </li>
+
               <li
-                class="flex items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[39px] border-b border-gray-800"
+                id="firstAcc"
+                class="border-b border-gray-800 flex flex-col items-center justify-center"
               >
-                <span>03</span>
-                <span>Is Artificial Intelligence replacing human jobs?</span>
-                <span><i class="ri-arrow-right-s-fill"></i></span>
+                <div
+                  class="flex w-full items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[37px] text-left cursor-pointer accordion-header"
+                >
+                  <span>02</span>
+                  <span
+                    >How does Machine Learning relate to Artificial
+                    Intelligence?</span
+                  >
+                  <span
+                    ><i
+                      class="ri-arrow-right-s-fill transition-transform duration-300"
+                    ></i
+                  ></span>
+                </div>
+
+                <div
+                  id="accardion_content"
+                  class="w-[700px] max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <p class="py-4">
+                    Machine Learning is a subset of AI that focuses on
+                    developing algorithms and models that allow computers to
+                    learn from data and improve their performance over time. It
+                    plays a crucial role in enabling AI systems to recognize
+                    patterns, make predictions, and adapt to new information.
+                  </p>
+                </div>
               </li>
+
               <li
-                class="flex items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[39px] border-b border-gray-800"
+                id="firstAcc"
+                class="border-b border-gray-800 flex flex-col items-center justify-center"
               >
-                <span>04</span>
-                <span
-                  >What are the different types of Artificial Intelligence?
-                </span>
-                <span><i class="ri-arrow-right-s-fill"></i></span>
+                <div
+                  class="flex w-full items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[37px] text-left cursor-pointer accordion-header"
+                >
+                  <span>03</span>
+                  <span>Is Artificial Intelligence replacing human jobs?</span>
+                  <span
+                    ><i
+                      class="ri-arrow-right-s-fill transition-transform duration-300"
+                    ></i
+                  ></span>
+                </div>
+
+                <div
+                  id="accardion_content"
+                  class="w-[700px] max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <p class="py-4">
+                    Machine Learning is a subset of AI that focuses on
+                    developing algorithms and models that allow computers to
+                    learn from data and improve their performance over time. It
+                    plays a crucial role in enabling AI systems to recognize
+                    patterns, make predictions, and adapt to new information.
+                  </p>
+                </div>
+              </li>
+
+              <li
+                id="firstAcc"
+                class="border-b border-gray-800 flex flex-col items-center justify-center"
+              >
+                <div
+                  class="flex w-full items-center justify-between font-normal leading-[1.166666] font-sora text-[30px] tracking-[-.03em] py-[37px] text-left cursor-pointer accordion-header"
+                >
+                  <span>04</span>
+                  <span
+                    >What are the different types of Artificial
+                    Intelligence?</span
+                  >
+                  <span
+                    ><i
+                      class="ri-arrow-right-s-fill transition-transform duration-300"
+                    ></i
+                  ></span>
+                </div>
+
+                <div
+                  id="accardion_content"
+                  class="w-[700px] max-h-0 overflow-hidden transition-all duration-300"
+                >
+                  <p class="py-4">
+                    Machine Learning is a subset of AI that focuses on
+                    developing algorithms and models that allow computers to
+                    learn from data and improve their performance over time. It
+                    plays a crucial role in enabling AI systems to recognize
+                    patterns, make predictions, and adapt to new information.
+                  </p>
+                </div>
               </li>
             </ul>
             <button
@@ -1563,7 +1677,7 @@
               </div>
             </div>
             <div
-              class="px-[10.5vw] pt-[9.1vw] pb-[5.7vw] rounded-[25px] bg-[#FFFFFF] mr-[-10.5vw]"
+              class="px-[10.5vw] pt-[9.1vw] pb-[5.7vw] rounded-[25px] bg-[#FFFFFF]"
             >
               <div>
                 <h2

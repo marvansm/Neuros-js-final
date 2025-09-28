@@ -67,17 +67,7 @@
   line-height: 1em;
 }
 
-.mask-logo {
-  -webkit-mask-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HD_transparent_picture.png/480px-HD_transparent_picture.png");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
 
-  mask-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HD_transparent_picture.png/480px-HD_transparent_picture.png");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-}
 .colorText {
   background: linear-gradient(262deg, #e24c4a 14.51%, #386bb7 95.96%);
   -webkit-background-clip: text !important;
@@ -89,4 +79,18 @@
   text-orientation: mixed;
 }
 
+header.scrolled {
+  background: transparent;
+  padding-top: 0;
+}
 
+@keyframes heart-beat {
+  0%, 100% { transform: scale(1); }
+  
+  50% { transform: scale(1.2); }
+}
+
+.heart-pulse {
+  animation: heart-beat 1s infinite;
+  transform-origin: center;
+}
