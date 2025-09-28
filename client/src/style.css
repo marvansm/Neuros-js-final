@@ -81,5 +81,12 @@
 .colorText {
   background: linear-gradient(262deg, #e24c4a 14.51%, #386bb7 95.96%);
   -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+
