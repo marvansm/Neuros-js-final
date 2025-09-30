@@ -20,7 +20,7 @@ const productsRender = () => {
                     class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] right-[11%] flex items-center justify-center"
                   >
                     <div
-                      class="min-h-[50px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:bg-[#F14F44] duration-300 cursor-pointer rounded-[50%]"
+                      class="addtocart min-h-[50px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:bg-[#F14F44] duration-300 cursor-pointer rounded-[50%]"
                     >
                       <i
                         class="ri-shopping-cart-2-line text-[16px] text-white"
@@ -68,6 +68,15 @@ const productsRender = () => {
       )
       .join("");
     PRODUCTS_WRAPPER && (PRODUCTS_WRAPPER.innerHTML = renderHtml);
+    document.querySelectorAll(".addtocart").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.style.backgroundColor = "#64d39d8a";
+        setTimeout(() => {
+          btn.style.backgroundColor = "#64D39E";
+          btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
+        }, 1000);
+      });
+    });
   });
 };
 

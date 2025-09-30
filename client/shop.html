@@ -271,9 +271,28 @@
                 <i class="ri-search-line text-[20px]"></i>
               </li>
               <li
-                class="min-h-[40px] min-w-[40px] md:min-h-[50px] md:min-w-[50px] my-[5px] md:my-[10px] mx-[5px] md:mx-[15px] flex items-center justify-center bg-[#333333] rounded-full"
+                class="min-h-[40px] group relative min-w-[40px] md:min-h-[50px] md:min-w-[50px] my-[5px] md:my-[10px] mx-[5px] md:mx-[15px] flex items-center justify-center bg-[#333333] rounded-full"
               >
                 <i class="ri-shopping-cart-2-line text-[16px] text-white"></i>
+
+                <div
+                  class="absolute right-[-15px] top-[-11px] w-[371px] px-[39px] pt-[24px] pb-[46px] bg-white opacity-0 group-hover:opacity-100 shadow-md"
+                >
+                  <div class="flex items-center justify-between">
+                    <h2
+                      class="text-[#111111] mb-[40px] tracking-[-.03em] leading-[1.4em] text-[25px] font-normal font-sora"
+                    >
+                      Cart Items
+                    </h2>
+                    <button
+                      class="min-h-[40px] absolute top-0 right-0 min-w-[40px] md:min-h-[50px] md:min-w-[50px] my-[5px] md:my-[10px] mx-[5px] md:mx-[15px] flex items-center justify-center bg-[#F2F0F4] rounded-full"
+                    >
+                      <i
+                        class="ri-shopping-cart-2-line text-[16px] text-[#333333]"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
               </li>
               <li
                 class="relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)] hover:[background:linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]"
@@ -436,9 +455,7 @@
                 <h2>Tags</h2>
                 <i class="ri-arrow-right-s-line"></i>
               </div>
-              <div id="tagWrapper">
-              
-              </div>
+              <div id="tagWrapper"></div>
             </div>
           </div>
         </div>
