@@ -2,8 +2,15 @@ import accardions from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
 import openModals from "./Common/Modal";
+import priceRange from "./Common/priceRange";
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
+import {
+  categoryRender,
+  popularProducts,
+  tagRender,
+} from "./Components/filter";
+import productsRender from "./Components/products";
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
@@ -18,5 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
   toTopScroll();
   scrollAction();
   accardions();
+  priceRange();
   loadingScreen();
+  productsRender();
+  categoryRender();
+  popularProducts();
+  tagRender();
 });
