@@ -67,7 +67,6 @@
   line-height: 1em;
 }
 
-
 .colorText {
   background: linear-gradient(262deg, #e24c4a 14.51%, #386bb7 95.96%);
   -webkit-background-clip: text !important;
@@ -85,12 +84,54 @@ header.scrolled {
 }
 
 @keyframes heart-beat {
-  0%, 100% { transform: scale(1); }
-  
-  50% { transform: scale(1.2); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .heart-pulse {
   animation: heart-beat 1s infinite;
   transform-origin: center;
+}
+
+.noUi-target {
+  background: #ddd;
+  border: none;
+  box-shadow: none;
+  height: 6px;
+  border-radius: 10px;
+}
+
+.noUi-connect {
+  background: #e74c3c;
+  height: 6px;
+  border-radius: 10px;
+}
+
+.noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e74c3c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  top: -7px;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  right: -17px;
+  top: -6px;
 }

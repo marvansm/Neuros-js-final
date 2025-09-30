@@ -1,8 +1,8 @@
 const loadingScreen = () => {
   const LOADING = document.querySelector(".loading");
   setTimeout(() => {
-    LOADING.classList.add("hidden");
-  }, 2000);
+    LOADING && LOADING.classList.add("hidden");
+  }, 1000);
 };
 
 export default loadingScreen;
