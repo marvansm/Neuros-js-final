@@ -79,7 +79,7 @@ const productsRender = (query = "") => {
           btn.style.backgroundColor = "#64D39E";
           btn.innerHTML = `<i class=\"ri-check-line text-[16px] font-bold text-white\"></i>`;
           btn.addEventListener("click", () => {
-            window.location.href = "/basket.html";
+            window.location.href = "/cart.html";
           });
         }, 1000);
       });
