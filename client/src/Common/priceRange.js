@@ -1,7 +1,7 @@
 const priceRange = () => {
   const slider = document.getElementById("slider");
   if (!slider) {
-    console.error("⚠️ #slider tapılmadı, priceRange başlamadı.");
+    console.error(" ");
     return;
   }
 
