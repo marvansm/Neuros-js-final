@@ -53,7 +53,7 @@ function renderBasket() {
     btn.onclick = (e) => {
       e.preventDefault();
       const id = btn.getAttribute("data-id");
-      removeFromCart((id)) ? id : Number(id);
+      removeFromCart(isNaN(Number(id)) ? id : Number(id));
       renderBasket();
     };
   });
