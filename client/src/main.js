@@ -5,11 +5,14 @@ import openModals from "./Common/Modal";
 import priceRange from "./Common/priceRange";
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
+import renderBasket from "./Components/basketUI";
 import {
   categoryRender,
   popularProducts,
+  sorting,
   tagRender,
 } from "./Components/filter";
+
 import productsRender from "./Components/products";
 
 var swiper = new Swiper(".mySwiper", {
@@ -31,4 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
   categoryRender();
   popularProducts();
   tagRender();
+  sorting();
+  renderBasket();
 });

@@ -1,8 +1,10 @@
 import HttpServices from "../Api/http";
+import productsRender from "./products";
 
 const CATEGORY_WRAPPER = document.querySelector("#categroyWrapper");
 const POPULAR_PRODUCTS_WRAPPER = document.querySelector("#popularsWrapper");
 const TAG_WRAPPER = document.querySelector("#tagWrapper");
+const SORT_SELECT = document.querySelector("select");
 const api = new HttpServices("http://localhost:1337/api/");
 
 export const categoryRender = () => {
@@ -10,7 +12,9 @@ export const categoryRender = () => {
     console.log(c);
     let renderC = c?.data
       ?.map(
-        (item) => `    <ul class="text-[18px]">
+        (
+          item
+        ) => `    <ul class="text-[18px]" data-id="${item.id}" data-type="categories">
                 <li
                   class="mb-[1.1111em] flex items-center gap-1.5 text-[#9b9b9b] font-semibold font-manrope hover:text-[#333333] duration-300 cursor-pointer group"
                 >
@@ -24,6 +28,12 @@ export const categoryRender = () => {
       )
       .join("");
     CATEGORY_WRAPPER && (CATEGORY_WRAPPER.innerHTML = renderC);
+    CATEGORY_WRAPPER.addEventListener("click", (e) => {
+      const target = e.target.closest("[data-id]");
+      if (!target) return;
+      const id = target.dataset.id;
+      productsRender(`&filters[categories][id][$eq]=${id}`);
+    });
   });
 };
 
@@ -85,6 +95,7 @@ export const tagRender = () => {
     let htmlRender = data?.data
       ?.map(
         (item) => `  <button
+        data-id=${item?.id} data-type="tags"
                   class="bg-[#f0f2f4] hover:text-white duration-300 cursor-pointer text-[#333333] text-[14px] leading-[20px] font-medium py-[7.5px] px-[13px] rounded-[999px] font-manrope mx-[5px] my-[6px] hover:bg-[#333333]"
                 >
                   / ${item?.name} /
@@ -92,5 +103,19 @@ export const tagRender = () => {
       )
       .join("");
     TAG_WRAPPER && (TAG_WRAPPER.innerHTML = htmlRender);
+    TAG_WRAPPER.addEventListener("click", (e) => {
+      const target = e.target.closest("[data-id]");
+      if (!target) return;
+      const id = target.dataset.id;
+      productsRender(`&filters[tags][id][$eq]=${id}`);
+    });
+  });
+};
+
+export const sorting = () => {
+  SORT_SELECT.addEventListener("change", (e) => {
+    const sortValue = e.target.value;
+    const query = sortValue ? `&sort[0]=${sortValue}` : "";
+    productsRender(query);
   });
 };

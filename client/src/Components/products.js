@@ -1,10 +1,11 @@
 import HttpServices from "../Api/http";
+import { addToCart } from "../Provider/addtocart";
 
 const api = new HttpServices("http://localhost:1337/api/");
 const PRODUCTS_WRAPPER = document.querySelector("#productWrapper");
 
-const productsRender = () => {
-  api.getData("products?populate=*").then((data) => {
+const productsRender = (query = "") => {
+  api.getData(`products?populate=*${query}`).then((data) => {
     let renderHtml = data?.data
       ?.map(
         (item) => `        <div
@@ -21,6 +22,7 @@ const productsRender = () => {
                   >
                     <div
                       class="addtocart min-h-[50px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:bg-[#F14F44] duration-300 cursor-pointer rounded-[50%]"
+                      data-product='${JSON.stringify(item)}'
                     >
                       <i
                         class="ri-shopping-cart-2-line text-[16px] text-white"
@@ -70,10 +72,15 @@ const productsRender = () => {
     PRODUCTS_WRAPPER && (PRODUCTS_WRAPPER.innerHTML = renderHtml);
     document.querySelectorAll(".addtocart").forEach((btn) => {
       btn.addEventListener("click", () => {
+        const product = JSON.parse(btn.getAttribute("data-product"));
+        addToCart(product);
         btn.style.backgroundColor = "#64d39d8a";
         setTimeout(() => {
           btn.style.backgroundColor = "#64D39E";
-          btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
+          btn.innerHTML = `<i class=\"ri-check-line text-[16px] font-bold text-white\"></i>`;
+          btn.addEventListener("click", () => {
+            window.location.href = "/basket.html";
+          });
         }, 1000);
       });
     });
