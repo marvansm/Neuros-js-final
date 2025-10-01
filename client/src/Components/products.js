@@ -77,7 +77,7 @@ const productsRender = (query = "") => {
         btn.style.backgroundColor = "#64d39d8a";
         setTimeout(() => {
           btn.style.backgroundColor = "#64D39E";
-          btn.innerHTML = `<i class=\"ri-check-line text-[16px] font-bold text-white\"></i>`;
+          btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
           btn.addEventListener("click", () => {
             window.location.href = "/cart.html";
           });
