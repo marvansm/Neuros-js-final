@@ -28,12 +28,13 @@ export const categoryRender = () => {
       )
       .join("");
     CATEGORY_WRAPPER && (CATEGORY_WRAPPER.innerHTML = renderC);
-    CATEGORY_WRAPPER.addEventListener("click", (e) => {
-      const target = e.target.closest("[data-id]");
-      if (!target) return;
-      const id = target.dataset.id;
-      productsRender(`&filters[categories][id][$eq]=${id}`);
-    });
+    CATEGORY_WRAPPER &&
+      CATEGORY_WRAPPER.addEventListener("click", (e) => {
+        const target = e.target.closest("[data-id]");
+        if (!target) return;
+        const id = target.dataset.id;
+        productsRender(`&filters[categories][id][$eq]=${id}`);
+      });
   });
 };
 
@@ -103,19 +104,21 @@ export const tagRender = () => {
       )
       .join("");
     TAG_WRAPPER && (TAG_WRAPPER.innerHTML = htmlRender);
-    TAG_WRAPPER.addEventListener("click", (e) => {
-      const target = e.target.closest("[data-id]");
-      if (!target) return;
-      const id = target.dataset.id;
-      productsRender(`&filters[tags][id][$eq]=${id}`);
-    });
+    TAG_WRAPPER &&
+      TAG_WRAPPER.addEventListener("click", (e) => {
+        const target = e.target.closest("[data-id]");
+        if (!target) return;
+        const id = target.dataset.id;
+        productsRender(`&filters[tags][id][$eq]=${id}`);
+      });
   });
 };
 
 export const sorting = () => {
-  SORT_SELECT.addEventListener("change", (e) => {
-    const sortValue = e.target.value;
-    const query = sortValue ? `&sort[0]=${sortValue}` : "";
-    productsRender(query);
-  });
+  SORT_SELECT &&
+    SORT_SELECT.addEventListener("change", (e) => {
+      const sortValue = e.target.value;
+      const query = sortValue ? `&sort[0]=${sortValue}` : "";
+      productsRender(query);
+    });
 };
