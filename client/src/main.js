@@ -6,6 +6,7 @@ import priceRange from "./Common/priceRange";
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
 import renderBasket from "./Components/basketUI";
+import cart from "./Components/cart";
 import {
   categoryRender,
   popularProducts,
@@ -14,6 +15,7 @@ import {
 } from "./Components/filter";
 
 import productsRender from "./Components/products";
+import subtotal from "./Components/subTotal";
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
@@ -36,4 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
   tagRender();
   sorting();
   renderBasket();
+  cart();
+  subtotal();
 });
