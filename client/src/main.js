@@ -14,6 +14,7 @@ import {
 } from "./Components/filter";
 
 import subtotal from "./Components/subTotal";
+import blogPage from "./Pages/blog";
 import cart from "./Pages/cart";
 import detailPage from "./Pages/Detail";
 import productsRender from "./Pages/products";
@@ -42,4 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
   cart();
   subtotal();
   detailPage();
+  blogPage()
 });
