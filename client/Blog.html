@@ -123,107 +123,144 @@
         <i class="ri-arrow-up-s-line text-[20px] font-bold"></i>
       </div>
     </div>
-<header
-  id="mainHeader"
-  class="mx-auto px-4 md:px-[40px] sticky top-0 left-0 right-0 pt-[10px] bg-[#F0F2F4] z-[999]"
->
-  <div>
-    <nav
-      class="flex items-center justify-between py-[10px] md:py-[15px] px-[15px] md:px-[20px] rounded-[20px] md:rounded-[25px] shadow-sm bg-white"
+    <header
+      id="mainHeader"
+      class="mx-auto px-4 md:px-[40px] sticky top-0 left-0 right-0 pt-[10px] bg-[#F0F2F4] z-[999]"
     >
-      <div class="left flex items-center gap-3">
-        <div class="sideBarIcon w-[40px] md:w-[70px] cursor-pointer ">
-          <i class="ri-layout-grid-fill text-[22px] md:text-[25px]"></i>
-        </div>
-        <div class="logo w-[40px] md:w-[47px] h-auto">
-          <img
-            src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
-            alt="Logo"
-            class="w-full h-full object-contain"
-          />
-        </div>
-      </div>
+      <div>
+        <nav
+          class="flex flex-wrap items-center justify-between py-[10px] md:py-[15px] px-[15px] md:px-[20px] rounded-[20px] md:rounded-[25px] shadow-sm bg-white"
+        >
+          <div class="left flex items-center gap-3">
+            <div class="sideBarIcon w-[40px] md:w-[70px] cursor-pointer">
+              <i class="ri-layout-grid-fill text-[22px] md:text-[25px]"></i>
+            </div>
+            <div class="logo w-[40px] md:w-[47px] h-auto">
+              <img
+                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
+                alt="Logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
 
-      <div class="tabs relative hidden md:block">
-        <ul class="flex items-center gap-[17px] uppercase font-manrope">
-          <li
-            class="py-[10px] bg-[#333] gap-2 cursor-pointer duration-300 text-[#f5f5f5] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
-          >
-            Home <i class="ri-arrow-right-s-fill rotate-45 pt-1"></i>
-          </li>
+          <div class="relative tabs hidden md:flex">
+            <ul class="flex items-center gap-[17px] uppercase font-manrope">
+              <li
+                class="py-[10px] bg-[#333] gap-2 cursor-pointer duration-300 text-[#f5f5f5] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+              >
+                Home <i class="ri-arrow-right-s-fill rotate-45 pt-1"></i>
+              </li>
 
-          <li id="pagesMenuWrapper" class="relative">
-            <button
-              id="pagesButton"
-              class="py-[10px] hover:bg-[#F2F0F4] duration-300 gap-2 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
-            >
-              Pages <i class="ri-arrow-right-s-fill rotate-45 pt-1"></i>
-            </button>
+              <li id="pagesMenuWrapper" class="relative">
+                <button
+                  id="pagesButton"
+                  class="py-[10px] hover:bg-[#F2F0F4] duration-300 gap-2 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+                >
+                  Pages <i class="ri-arrow-right-s-fill rotate-45 pt-1"></i>
+                </button>
 
-            <ul
-              id="pagesDropdown"
-              class="absolute top-full left-0 mt-2 text-[14px] bg-[#1F1F1F] text-white rounded-xl shadow-lg py-[20px] px-[20px] opacity-0 invisible transition-opacity duration-300 z-50 w-[220px]"
-            >
-              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
-                About
+                <ul
+                  id="pagesDropdown"
+                  class="absolute top-full left-0 mt-2 text-[14px] bg-[#1F1F1F] text-white rounded-xl shadow-lg py-[20px] px-[20px] opacity-0 invisible transition-opacity duration-300 z-50 w-[220px]"
+                >
+                  <li
+                    class="px-3 py-2 hover:bg-white hover:text-black rounded-md"
+                  >
+                    About
+                  </li>
+                  <li
+                    class="px-3 py-2 hover:bg-white hover:text-black rounded-md"
+                  >
+                    Team
+                  </li>
+                  <li
+                    class="px-3 py-2 hover:bg-white hover:text-black rounded-md"
+                  >
+                    Projects
+                  </li>
+                  <li
+                    class="px-3 py-2 hover:bg-white hover:text-black rounded-md"
+                  >
+                    Careers
+                  </li>
+                  <li
+                    class="px-3 py-2 hover:bg-white hover:text-black rounded-md"
+                  >
+                    Pricing
+                  </li>
+                </ul>
               </li>
-              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
-                Team
+
+              <li
+                class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+              >
+                Services
               </li>
-              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
-                Projects
+              <li
+                class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+              >
+                Shop
               </li>
-              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
-                Careers
+              <li
+                class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+              >
+                Blog
               </li>
-              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
-                Pricing
+              <li
+                class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+              >
+                Contacts
               </li>
             </ul>
-          </li>
+          </div>
 
-          <li
-            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
-          >
-            Services
-          </li>
-          <li
-            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
-          >
-            Shop
-          </li>
-          <li
-            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
-          >
-            Blog
-          </li>
-          <li
-            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
-          >
-            Contacts
-          </li>
-        </ul>
+          <div class="actions items-center gap-3 hidden md:flex">
+            <i class="ri-search-line text-[20px] cursor-pointer"></i>
+            <div
+              class="hidden md:inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]"
+            >
+              <span
+                class="block rounded-[999px] font-manrope bg-white hover:bg-transparent transition-colors duration-300 font-semibold min-w-[140px] md:min-w-[158px] px-[16px] py-[10px] md:py-[15px] text-center text-[13px] md:text-[14px]"
+              >
+                Get in touch
+              </span>
+            </div>
+            <div class="block md:hidden cursor-pointer" id="menuToggle">
+              <i class="ri-menu-3-line text-[24px]"></i>
+            </div>
+          </div>
+        </nav>
       </div>
 
-      <div class="actions flex items-center gap-3">
-        <i class="ri-search-line text-[20px] cursor-pointer"></i>
-        <div
-          class="hidden md:inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]"
-        >
-          <span
-            class="block rounded-[999px] font-manrope bg-white hover:bg-transparent transition-colors duration-300 font-semibold min-w-[140px] md:min-w-[158px] px-[16px] py-[10px] md:py-[15px] text-center text-[13px] md:text-[14px]"
+      <div
+        id="mobileMenu"
+        class="hidden flex-col gap-4 bg-white border-t border-gray-200 px-4 py-6 md:hidden"
+      >
+        <a href="#" class="text-[#333] hover:text-[#f14f44]">Home</a>
+        <a href="#" class="text-[#333] hover:text-[#f14f44]">Pages</a>
+        <a href="#" class="text-[#333] hover:text-[#f14f44]">Services</a>
+        <a href="#" class="text-[#333] hover:text-[#f14f44]">Shop</a>
+        <a href="#" class="text-[#333] hover:text-[#f14f44]">Blog</a>
+        <a href="#" class="text-[#333] hover:text-[#f14f44]">Contacts</a>
+        <div class="mt-4">
+          <button
+            class="w-full rounded-[999px] bg-[#f14f44] text-white py-2 font-semibold"
           >
             Get in touch
-          </span>
-        </div>
-        <div class="block md:hidden cursor-pointer">
-          <i class="ri-menu-3-line text-[24px]"></i>
+          </button>
         </div>
       </div>
-    </nav>
-  </div>
-</header>
+    </header>
 
+    <script>
+      const toggleBtn = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
 
     <main>
       <section

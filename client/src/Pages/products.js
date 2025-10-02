@@ -7,10 +7,11 @@ const SIMILAR_PRODUCTS = document.querySelector("#similarProduct");
 
 const productsRender = (query = "") => {
   api.getData(`products?populate=*${query}`).then((data) => {
-    PRODUCTS_WRAPPER.innerHTML = data.data
-      .map((item) => {
-        const price = item.discount ?? item.price;
-        return `
+    PRODUCTS_WRAPPER &&
+      (PRODUCTS_WRAPPER.innerHTML = data.data
+        .map((item) => {
+          const price = item.discount ?? item.price;
+          return `
       <div class="box rounded-[25px] overflow-hidden border border-gray-300">
 
         <div class="boxImg relative">
@@ -77,35 +78,37 @@ const productsRender = (query = "") => {
         </div></div
     >
       `;
-      })
-      .join("");
+        })
+        .join(""));
 
-    PRODUCTS_WRAPPER.querySelectorAll(".addtocart").forEach((btn) => {
-      btn.onclick = () => {
-        const id = btn.dataset.id;
-        const product = data.data.find((p) => String(p.id) === id);
-        if (!product) return;
+    PRODUCTS_WRAPPER &&
+      PRODUCTS_WRAPPER.querySelectorAll(".addtocart").forEach((btn) => {
+        btn.onclick = () => {
+          const id = btn.dataset.id;
+          const product = data.data.find((p) => String(p.id) === id);
+          if (!product) return;
 
-        addToCart(product);
-        btn.style.backgroundColor = "#64d39d8a";
+          addToCart(product);
+          btn.style.backgroundColor = "#64d39d8a";
 
-        setTimeout(() => {
-          btn.style.backgroundColor = "#64D39E";
-          btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
+          setTimeout(() => {
+            btn.style.backgroundColor = "#64D39E";
+            btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
 
-          btn.onclick = () => {
-            window.location.href = "/cart.html";
-          };
-        }, 1000);
-      };
-    });
+            btn.onclick = () => {
+              window.location.href = "/cart.html";
+            };
+          }, 1000);
+        };
+      });
   });
   api.getData(`products?populate=*${query}`).then((data) => {
-    SIMILAR_PRODUCTS.innerHTML = data?.data
-      ?.slice(0, 4)
-      .map((item) => {
-        const price = item.discount ?? item.price;
-        return `
+    SIMILAR_PRODUCTS &&
+      (SIMILAR_PRODUCTS.innerHTML = data?.data
+        ?.slice(0, 4)
+        .map((item) => {
+          const price = item.discount ?? item.price;
+          return `
       <div class="box rounded-[25px] overflow-hidden border border-gray-300">
         <div class="boxImg relative">
         <a href="./Detail.html?id=${item?.id}">
@@ -171,28 +174,29 @@ const productsRender = (query = "") => {
         </div></div
     >
       `;
-      })
-      .join("");
+        })
+        .join(""));
 
-    SIMILAR_PRODUCTS.querySelectorAll(".addtocart").forEach((btn) => {
-      btn.onclick = () => {
-        const id = btn.dataset.id;
-        const product = data.data.find((p) => String(p.id) === id);
-        if (!product) return;
+    SIMILAR_PRODUCTS &&
+      SIMILAR_PRODUCTS.querySelectorAll(".addtocart").forEach((btn) => {
+        btn.onclick = () => {
+          const id = btn.dataset.id;
+          const product = data.data.find((p) => String(p.id) === id);
+          if (!product) return;
 
-        addToCart(product);
-        btn.style.backgroundColor = "#64d39d8a";
+          addToCart(product);
+          btn.style.backgroundColor = "#64d39d8a";
 
-        setTimeout(() => {
-          btn.style.backgroundColor = "#64D39E";
-          btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
+          setTimeout(() => {
+            btn.style.backgroundColor = "#64D39E";
+            btn.innerHTML = `<i class="ri-check-line text-[16px] font-bold text-white"></i>`;
 
-          btn.onclick = () => {
-            window.location.href = "/cart.html";
-          };
-        }, 1000);
-      };
-    });
+            btn.onclick = () => {
+              window.location.href = "/cart.html";
+            };
+          }, 1000);
+        };
+      });
   });
 };
 
