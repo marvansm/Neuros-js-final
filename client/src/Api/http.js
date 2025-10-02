@@ -4,7 +4,7 @@ class HttpServices {
   constructor(baseURL) {
     this.axiosInstance = axios.create({
       baseURL,
-      timeout: 1000,
+      timeout: 5000,
     });
   }
   async getData(url) {
