@@ -23,7 +23,7 @@ const productsRender = (query = "") => {
           />
 </a>
           <div
-            class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] right-[11%] flex items-center justify-center"
+            class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] z-[999] right-[11%] flex items-center justify-center"
           >
             <div
               class="addtocart min-h-[50px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:bg-[#F14F44] duration-300 cursor-pointer rounded-[50%]"
@@ -117,7 +117,7 @@ const productsRender = (query = "") => {
           />
 </a>
           <div
-            class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] right-[11%] flex items-center justify-center"
+            class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] z-[9999] right-[11%] flex items-center justify-center"
           >
             <div
               class="addtocart min-h-[50px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:bg-[#F14F44] duration-300 cursor-pointer rounded-[50%]"
