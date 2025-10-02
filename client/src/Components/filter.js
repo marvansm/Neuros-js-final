@@ -1,5 +1,6 @@
 import HttpServices from "../Api/http";
-import productsRender from "./products";
+import productsRender from "../Pages/products";
+
 
 const CATEGORY_WRAPPER = document.querySelector("#categroyWrapper");
 const POPULAR_PRODUCTS_WRAPPER = document.querySelector("#popularsWrapper");
