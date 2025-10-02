@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuros</title>
+    <link
+      rel="shortcut icon"
+      href="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2023/12/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/remixicon/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <div
+      class="loading fixed w-full h-full bg-white z-[99999] flex items-center justify-center"
+    >
+      <div>
+        <img
+          src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
+          alt=""
+          class="heart-pulse"
+        />
+      </div>
+    </div>
+    <div
+      id="contactModals"
+      class="contactModal fixed h-full w-full z-[9999] bg-[#0000004d] top-0 left-0 hidden transition-all duration-300 ease-in-out opacity-0 scale-95"
+    >
+      <div
+        class="absolute top-5 left-5 bg-[#1F1F1F] w-[400px] h-[700px] rounded-[25px]"
+      >
+        <div
+          class="py-[68px] px-[62px] relative h-full w-full flex items-start flex-col justify-between overflow-hidden"
+        >
+          <div class="logo pb-[20px]">
+            <img
+              src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-dark-1.png"
+              alt=""
+              class="w-[47px] h-[25px]"
+            />
+          </div>
+          <div class="py-[50px]">
+            <h2
+              class="text-[12px] font-bold uppercase leading-[1.5555em] my-[1.3888em] text-white font-manrope"
+            >
+              Contacts
+            </h2>
+            <h3
+              class="text-[18px] leading-[1.5555em] my-[1.3888em] font-manrope text-white font-semibold"
+            >
+              USA, New York - 1060 <br />
+              Str. First Avenue 1
+            </h3>
+            <h4
+              class="text-[18px] leading-[1.5555em] my-[1.3888em] font-manrope text-white font-semibold"
+            >
+              800 100 975 20 34 <br />
+              + (123) 1800-234-5678
+            </h4>
+            <h5
+              class="text-[18px] leading-[1.5555em] my-[1.3888em] font-manrope text-white font-medium"
+            >
+              neuros@mail.co
+            </h5>
+
+            <button
+              class="mt-[50px] relative inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] border border-red-300 hover:[background:linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]"
+            >
+              <span
+                class="block rounded-[999px] font-manrope bg-transparent text-white hover:bg-transparent transition-colors duration-300 font-semibold min-w-[158px] px-[18px] py-[15px] text-center"
+              >
+                Get in touch
+              </span>
+            </button>
+          </div>
+          <ul class="flex items-start gap-[40px] text-[#ffffff] text-[20px]">
+            <li><i class="ri-facebook-fill"></i></li>
+            <li><i class="ri-twitter-x-line"></i></li>
+            <li><i class="ri-linkedin-fill"></i></li>
+            <li><i class="ri-youtube-line"></i></li>
+          </ul>
+          <div
+            class="absolute bottom-0 left-0 overflow-hidden bg-no-repeat bg-cover bg-center w-[399px] h-[300px]"
+            style="
+              background-image: url(https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/themes/neuros/img/sidepanel-bg.png);
+            "
+          ></div>
+        </div>
+        <div
+          class="absolute bg-no-repeat bg-cover bg-center w-[68px] h-full rounded-[25px] top-0 left-[101%] flex items-start justify-center"
+          style="
+            background-image: url(https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/Ooze-25-1-2.jpg);
+          "
+        >
+          <div
+            class="py-[28px] text-[#ffffff] text-[17px] font-normal font-manrope"
+          >
+            <i class="ri-close-line text-[22px] cursor-pointer"></i>
+            <p class="vertical-text">Close</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scrollUp fixed bottom-[62px] right-[57px] z-[9999] hidden">
+      <div
+        id="scrollBtn"
+        class="w-[50px] h-[73px] text-[#111111] bg-[#f14f44] hover:bg-[#f14f44d6] duration-300 cursor-pointer rounded-[30px] flex items-center justify-center"
+      >
+        <i class="ri-arrow-up-s-line text-[20px] font-bold"></i>
+      </div>
+    </div>
+<header
+  id="mainHeader"
+  class="mx-auto px-4 md:px-[40px] sticky top-0 left-0 right-0 pt-[10px] bg-[#F0F2F4] z-[999]"
+>
+  <div>
+    <nav
+      class="flex items-center justify-between py-[10px] md:py-[15px] px-[15px] md:px-[20px] rounded-[20px] md:rounded-[25px] shadow-sm bg-white"
+    >
+      <div class="left flex items-center gap-3">
+        <div class="sideBarIcon w-[40px] md:w-[70px] cursor-pointer ">
+          <i class="ri-layout-grid-fill text-[22px] md:text-[25px]"></i>
+        </div>
+        <div class="logo w-[40px] md:w-[47px] h-auto">
+          <img
+            src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-mobile-1.png"
+            alt="Logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+
+      <div class="tabs relative hidden md:block">
+        <ul class="flex items-center gap-[17px] uppercase font-manrope">
+          <li
+            class="py-[10px] bg-[#333] gap-2 cursor-pointer duration-300 text-[#f5f5f5] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+          >
+            Home <i class="ri-arrow-right-s-fill rotate-45 pt-1"></i>
+          </li>
+
+          <li id="pagesMenuWrapper" class="relative">
+            <button
+              id="pagesButton"
+              class="py-[10px] hover:bg-[#F2F0F4] duration-300 gap-2 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+            >
+              Pages <i class="ri-arrow-right-s-fill rotate-45 pt-1"></i>
+            </button>
+
+            <ul
+              id="pagesDropdown"
+              class="absolute top-full left-0 mt-2 text-[14px] bg-[#1F1F1F] text-white rounded-xl shadow-lg py-[20px] px-[20px] opacity-0 invisible transition-opacity duration-300 z-50 w-[220px]"
+            >
+              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
+                About
+              </li>
+              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
+                Team
+              </li>
+              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
+                Projects
+              </li>
+              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
+                Careers
+              </li>
+              <li class="px-3 py-2 hover:bg-white hover:text-black rounded-md">
+                Pricing
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+          >
+            Services
+          </li>
+          <li
+            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+          >
+            Shop
+          </li>
+          <li
+            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+          >
+            Blog
+          </li>
+          <li
+            class="py-[10px] hover:bg-[#F2F0F4] gap-2 duration-300 cursor-pointer text-[#333] font-bold leading-[38px] h-[38px] px-[18px] text-[13px] rounded-[999px] flex items-center justify-center"
+          >
+            Contacts
+          </li>
+        </ul>
+      </div>
+
+      <div class="actions flex items-center gap-3">
+        <i class="ri-search-line text-[20px] cursor-pointer"></i>
+        <div
+          class="hidden md:inline-block cursor-pointer hover:text-white duration-300 rounded-[999px] p-[2px] bg-[linear-gradient(262deg,_#FF6B6B_14.51%,_#7352DE_95.96%)]"
+        >
+          <span
+            class="block rounded-[999px] font-manrope bg-white hover:bg-transparent transition-colors duration-300 font-semibold min-w-[140px] md:min-w-[158px] px-[16px] py-[10px] md:py-[15px] text-center text-[13px] md:text-[14px]"
+          >
+            Get in touch
+          </span>
+        </div>
+        <div class="block md:hidden cursor-pointer">
+          <i class="ri-menu-3-line text-[24px]"></i>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <section
+        class="banner bg-[#F0F2F4] py-6 md:py-8 lg:py-[32px] mx-auto px-2 md:px-6 lg:px-[40px] rounded-b-[25px]"
+      >
+        <div
+          class="w-full h-full bg-no-repeat bg-cover bg-center min-h-[250px] md:min-h-[350px] lg:min-h-[500px] rounded-[25px] flex flex-col md:flex-row items-center relative"
+          style="
+            background-image: url(https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/page-title-bg-min-1.jpg);
+          "
+        >
+          <div
+            class="content flex flex-col md:flex-row items-center justify-between w-full"
+          >
+            <div class="px-4 md:px-8 lg:px-[40px] mb-4 md:mb-0">
+              <img
+                src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-dark-1.png"
+                alt=""
+                class="w-[43px] h-[23px] object-contain mb-[22px]"
+              />
+              <h2
+                class="tracking-[-0.03em] font-normal font-sora leading-[1.125em] text-3xl md:text-5xl lg:text-[80px] text-white"
+              >
+                Blog Grid
+              </h2>
+            </div>
+            <h3
+              class="countWhite vertical-text rotate-180 text-xl md:text-3xl lg:text-[80px]"
+            >
+              Articles
+            </h3>
+          </div>
+          <div
+            class="absolute bottom-0 bg-[#f0f2f4] py-2 md:py-4 px-4 md:px-8 rounded-t-[25px] right-2 md:right-[7.65%]"
+          >
+            <ul
+              class="font-manrope text-xs md:text-sm leading-[27px] font-semibold tracking-[0] text-[#333333] flex items-center gap-1"
+            >
+              <li class="hover:text-red-500 cursor-pointer">Home</li>
+              <li class="text-gray-300">/</li>
+              <li>Blog Grid</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        class="max-w-full md:max-w-[1420px] px-2 md:px-4 lg:px-[20px] mt-8 md:mt-16 lg:mt-[150px] mx-auto"
+      >
+        <div
+          id="blogWrapper"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10"
+        ></div>
+
+        <div class="flex items-center justify-center mt-[40px] md:mt-[54px]">
+          <ul id="pagination" class="flex items-center gap-3 md:gap-4">
+            <li
+              class="page-btn bg-[#f14f44] text-white min-w-[40px] md:min-w-[50px] h-[40px] md:h-[50px] hover:bg-[#F14F44] text-[13px] md:text-[14px] duration-300 leading-[38px] md:leading-[47px] font-medium rounded-full text-center cursor-pointer"
+              data-page="1"
+            >
+              1
+            </li>
+            <li
+              class="page-btn bg-transparent text-[#333333] min-w-[40px] md:min-w-[50px] h-[40px] md:h-[50px] hover:bg-[#F14F44] hover:text-white duration-300 text-[13px] md:text-[14px] leading-[38px] md:leading-[47px] font-medium rounded-full text-center border border-red-500 cursor-pointer"
+              data-page="2"
+            >
+              2
+            </li>
+            <li
+              id="nextBtn"
+              class="bg-transparent text-[#333333] min-w-[60px] md:min-w-[80px] h-[40px] md:h-[50px] text-[13px] md:text-[14px] leading-[38px] md:leading-[47px] font-normal hover:bg-[#F14F44] hover:text-white duration-300 rounded-full text-center border border-red-500 px-[14px] md:px-[20px] cursor-pointer"
+            >
+              <i class="ri-arrow-right-s-line"></i> Next
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="mx-auto px-2 md:px-8 lg:px-[40px] mt-8 md:mt-16 lg:mt-[150px] mb-4 md:mb-[20px]"
+    >
+      <div class="bg-[#1F1F1F] px-2 md:px-8 lg:px-[40px] rounded-[25px]">
+        <div
+          class="bottom px-2 md:px-8 lg:px-[40px] max-w-full md:max-w-[1340px] mx-auto pt-4 md:pt-[24px]"
+        >
+          <div class="max-w-[1340px]"></div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 pt-8 md:pt-[63px] items-center"
+          >
+            <div class="md:col-span-8 pt-4 md:pt-[29px]">
+              <div class="logo w-[47px] h-auto mb-[1.3125rem]">
+                <img
+                  src="https://8ded8880.delivery.rocketcdn.me/themes/neuros/wp-content/uploads/2024/12/logo-dark-1.png"
+                  alt=""
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h2
+                class="colorText text-[60px] leading-[1.1666em] tracking-[-.03em] font-sora font-normal mt-[24px]"
+              >
+                It’s blow your mind! <br />
+                Meet Neural Networks
+              </h2>
+            </div>
+            <div class="md:col-span-4 pt-4 md:pt-[29px] mt-8 md:mt-0">
+              <div class="flex items-center justify-between">
+                <ul class="font-manrope">
+                  <li
+                    class="mb-[.4em] fon flex items-center gap-1.5t-semibold text-[#f5f5f5] text-[20px] leading-[1.5] tracking-normal"
+                  >
+                    Company
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    About
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Expertise
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Sustainability
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    News & Media
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Team
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Contacts
+                  </li>
+                </ul>
+                <ul class="font-manrope">
+                  <li
+                    class="mb-[.4em] font-semibold text-[#f5f5f5] text-[20px] leading-[1.5] tracking-normal"
+                  >
+                    Services
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Deep learning solutions
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Development
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Model evaluation
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Data Science Consult
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Neural Integration
+                  </li>
+                  <li
+                    class="text-[#f5f5f5] font-normal text-[16px] leading-[1.875em] font-manrope"
+                  >
+                    Real-time prediction
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center justify-center w-full bg-[#ffffff] px-4 md:px-8 lg:px-[58px] py-4 md:py-[30px] rounded-t-[25px] mt-8 md:mt-[93px]"
+          >
+            <ul
+              class="flex flex-col md:flex-row items-center justify-between w-full text-xs md:text-[.875em] leading-[1.714em] text-[#333333bf] gap-2 md:gap-0"
+            >
+              <li>©Neuros 2024. All rights reserved.</li>
+              <li>Terms of use Privacy Environmental Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
