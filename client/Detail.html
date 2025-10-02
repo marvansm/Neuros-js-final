@@ -332,7 +332,7 @@
         </nav>
       </div>
     </header>
-   
+
     <main>
       <section
         class="banner bg-[#F0F2F4] py-6 md:py-8 lg:py-[32px] mx-auto px-2 md:px-6 lg:px-[40px] rounded-b-[25px]"
@@ -353,10 +353,9 @@
                 class="w-[43px] h-[23px] object-contain mb-[22px]"
               />
               <h2
+                id="productName"
                 class="tracking-[-0.03em] font-normal font-sora leading-[1.125em] text-3xl md:text-5xl lg:text-[80px] text-white"
-              >
-                Products list
-              </h2>
+              ></h2>
             </div>
             <h3
               class="countWhite vertical-text rotate-180 text-xl md:text-3xl lg:text-[80px]"
@@ -375,6 +374,151 @@
               <li>Products list</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="mx-auto px-2 md:px-6 lg:px-[40px] mt-[150px]">
+        <div id="detailWrapper"></div>
+        <div class="mt-[150px]">
+          <div class="bg-white rounded-lg p-8">
+            <div class="flex gap-4 mb-8 ">
+              <a
+                href="#description"
+                class="bg-gray-800 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-700 transition"
+              >
+                Description
+              </a>
+              <a
+                href="#reviews"
+                class="bg-gray-200 text-gray-700 px-8 py-3 rounded-full font-medium hover:bg-gray-300 transition"
+              >
+                Reviews (1)
+              </a>
+            </div>
+
+            <div class="border-t border-gray-200 mb-8"></div>
+
+            <div id="description" class="mb-8">
+              <p class="text-gray-700 leading-relaxed mb-8">
+                Data lies at the heart of neural networks, and our services
+                start with understanding your unique data landscape. We work
+                closely with you to identify and collect relevant data sources,
+                ensuring that your neural network models are built on a solid
+                foundation. Our data scientists employ cutting-edge techniques
+                to preprocess and clean the data, making it ready for training
+                the neural network models.
+              </p>
+
+              <div class="space-y-3 mb-8">
+                <div class="flex items-center text-gray-800">
+                  <svg
+                    class="w-5 h-5 mr-3 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                  <span class="font-medium text-lg">Cotton</span>
+                </div>
+                <div class="flex items-center text-gray-800">
+                  <svg
+                    class="w-5 h-5 mr-3 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                  <span class="font-medium text-lg">Polyester</span>
+                </div>
+                <div class="flex items-center text-gray-800">
+                  <svg
+                    class="w-5 h-5 mr-3 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                  <span class="font-medium text-lg">Wool</span>
+                </div>
+                <div class="flex items-center text-gray-800">
+                  <svg
+                    class="w-5 h-5 mr-3 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                  <span class="font-medium text-lg">Blends</span>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex">
+                  <span class="font-semibold text-gray-800 w-40">Weight:</span>
+                  <span class="text-gray-700">1 kg</span>
+                </div>
+                <div class="flex">
+                  <span class="font-semibold text-gray-800 w-40"
+                    >Dimensions:</span
+                  >
+                  <span class="text-gray-700">10 × 11 × 22 cm</span>
+                </div>
+                <div class="flex">
+                  <span class="font-semibold text-gray-800 w-40">Color:</span>
+                  <span class="text-gray-700">Black, Blue, Red, White</span>
+                </div>
+                <div class="flex">
+                  <span class="font-semibold text-gray-800 w-40">Size:</span>
+                  <span class="text-gray-700">EU40, EU41, EU42, EU42.5</span>
+                </div>
+              </div>
+            </div>
+
+            <div id="reviews" class="hidden">
+              <p class="text-gray-700">Reviews content would go here...</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-[40px]">
+          <div class="heading">
+            <p
+              class="leading-[1.75em] font-medium text-[1rem] text-[#656667] font-manrope mb-[21px]"
+            >
+              / products /
+            </p>
+            <h3
+              class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-[#111111]"
+            >
+              Similar products
+            </h3>
+          </div>
+          <div
+            id="similarProduct"
+            class="grid grid-cols-4 gap-10 mt-[50px]"
+          ></div>
         </div>
       </section>
     </main>
