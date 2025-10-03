@@ -1,4 +1,4 @@
-const accardions = () => {
+ const accardions = () => {
   const firstTab = document.querySelectorAll("#firstAcc");
   const ACC_CONTENT = document.querySelectorAll("#accardion_content");
 
