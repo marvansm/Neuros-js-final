@@ -1,4 +1,4 @@
-import accardions from "./Common/Accardion";
+import { accardions, projectAccardion } from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
 import openModals from "./Common/Modal";
