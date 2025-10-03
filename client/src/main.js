@@ -1,9 +1,9 @@
-import { accardions, projectAccardion } from "./Common/Accardion";
+import { accardions, projectAcc } from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
 import openModals from "./Common/Modal";
 import priceRange from "./Common/priceRange";
-import projectAcc from "./Common/projectAcc";
+
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
 import renderBasket from "./Components/basketUI";
