@@ -9,11 +9,13 @@ const counterUP = () => {
   counters.forEach(({ id, start, end }) => {
     const counter = new CountUp(id, end, {
       startVal: start,
+      
       duration: 3,
       separator: ",",
       decimal: ".",
       decimals: 0,
     });
+
 
     if (!counter.error) {
       counter.start();
