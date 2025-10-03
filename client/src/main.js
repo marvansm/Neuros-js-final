@@ -1,8 +1,9 @@
-import accardions from "./Common/Accardion";
+import { accardions, projectAcc } from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
 import openModals from "./Common/Modal";
 import priceRange from "./Common/priceRange";
+
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
 import renderBasket from "./Components/basketUI";
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toTopScroll();
   scrollAction();
   accardions();
+  projectAcc();
   priceRange();
   loadingScreen();
   productsRender();

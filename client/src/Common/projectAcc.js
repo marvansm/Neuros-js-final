@@ -1,17 +1,4 @@
-export const accardions = () => {
-  const firstTab = document.querySelectorAll("#firstAcc");
-  const ACC_CONTENT = document.querySelectorAll("#accardion_content");
-
-  firstTab.forEach((btn, idx) => {
-    btn.addEventListener("click", () => {
-      const acc = ACC_CONTENT[idx];
-      acc.classList.toggle("max-h-0");
-      acc.classList.toggle("max-h-50");
-    });
-  });
-};
-
-export const projectAcc = () => {
+const projectAcc = () => {
   const items = document.querySelectorAll(".timeline-item");
 
   items.forEach((item) => {
@@ -22,12 +9,14 @@ export const projectAcc = () => {
     header.addEventListener("click", () => {
       const isOpen = item.classList.contains("active");
 
+      // Tümünü kapat
       items.forEach((i) => {
         i.classList.remove("active");
         i.querySelector(".timeline-content").style.maxHeight = "0px";
         i.querySelector(".icon").style.transform = "rotate(0deg)";
       });
 
+      // Tıklananı aç
       if (!isOpen) {
         item.classList.add("active");
         content.style.maxHeight = content.scrollHeight + "px";
@@ -36,3 +25,5 @@ export const projectAcc = () => {
     });
   });
 };
+
+export default projectAcc;
