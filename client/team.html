@@ -23,9 +23,8 @@
     />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-
   <body>
-    <!-- <div
+    <div
       class="loading fixed w-full h-full bg-white z-[99999] flex items-center justify-center"
     >
       <div>
@@ -35,7 +34,7 @@
           class="heart-pulse"
         />
       </div>
-    </div> -->
+    </div>
     <div
       id="contactModals"
       class="contactModal fixed h-full w-full z-[9999] bg-[#0000004d] top-0 left-0 hidden transition-all duration-300 ease-in-out opacity-0 scale-95"
@@ -332,7 +331,6 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section
         class="banner bg-[#F0F2F4] py-6 md:py-8 lg:py-[32px] mx-auto px-2 md:px-6 lg:px-[40px] rounded-b-[25px]"
@@ -421,14 +419,16 @@
                     />
                   </a>
                   <div
-                    class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] overflow-y-hidden z-[999] left-[11%] flex items-center justify-center "
+                    class="bg-white rounded-t-[50%] min-h-[65px] min-w-[65px] absolute bottom-[-23px] z-[999] left-[11%] flex items-center justify-center"
                   >
                     <div
                       class="addtocart min-h-[50px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:bg-[#F14F44] duration-300 cursor-pointer rounded-[50%]"
                     >
                       <i class="ri-share-fill text-white"></i>
                     </div>
-                    <div class="absolute  bottom-0 transform translate-y-[80px]  opacity-0 group-hover:opacity-100 duration-300 group-hover:translate-y-[0px]">
+                    <div
+                      class="absolute bottom-0 transform translate-y-[80px] opacity-0 group-hover:opacity-100 duration-300 group-hover:translate-y-[0px]"
+                    >
                       <ul class="text-white">
                         <li
                           class="min-h-[40px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:text-[#F14F44] duration-300 cursor-pointer rounded-t-[50%]"
@@ -436,12 +436,12 @@
                           <i class="ri-youtube-fill"></i>
                         </li>
                         <li
-                          class="min-h-[40px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:text-[#F14F44] duration-300 cursor-pointer "
+                          class="min-h-[40px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:text-[#F14F44] duration-300 cursor-pointer"
                         >
                           <i class="ri-linkedin-fill"></i>
                         </li>
                         <li
-                          class="min-h-[40px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:text-[#F14F44] duration-300 cursor-pointer "
+                          class="min-h-[40px] min-w-[50px] flex items-center justify-center bg-[#333333] hover:text-[#F14F44] duration-300 cursor-pointer"
                         >
                           <i class="ri-twitter-fill"></i>
                         </li>
@@ -593,7 +593,6 @@
         </div>
       </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/main.js"></script>
