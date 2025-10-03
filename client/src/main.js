@@ -1,4 +1,4 @@
-import accardions from "./Common/Accardion";
+import { accardions, projectAccardion } from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
 import openModals from "./Common/Modal";
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toTopScroll();
   scrollAction();
   accardions();
+  projectAccardion();
   priceRange();
   loadingScreen();
   productsRender();
@@ -43,5 +44,5 @@ document.addEventListener("DOMContentLoaded", () => {
   cart();
   subtotal();
   detailPage();
-  blogPage()
+  blogPage();
 });

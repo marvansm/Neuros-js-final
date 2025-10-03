@@ -1,4 +1,4 @@
-const accardions = () => {
+export const accardions = () => {
   const firstTab = document.querySelectorAll("#firstAcc");
   const ACC_CONTENT = document.querySelectorAll("#accardion_content");
 
@@ -10,5 +10,3 @@ const accardions = () => {
     });
   });
 };
-
-export default accardions;
