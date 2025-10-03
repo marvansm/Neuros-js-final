@@ -18,6 +18,7 @@ import blogPage from "./Pages/blog";
 import cart from "./Pages/cart";
 import detailPage from "./Pages/Detail";
 import productsRender from "./Pages/products";
+import counterUP from "./Utils/counterUP";
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
@@ -43,5 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   cart();
   subtotal();
   detailPage();
-  blogPage()
+  blogPage();
+  counterUP();
 });
