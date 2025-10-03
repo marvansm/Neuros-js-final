@@ -4,6 +4,7 @@ const counterUP = () => {
   const counters = [
     { id: "counter1", start: 0, end: 250 },
     { id: "counter2", start: 0, end: 250 },
+    { id: "counter3", start: 0, end: 250 },
   ];
 
   counters.forEach(({ id, start, end }) => {
