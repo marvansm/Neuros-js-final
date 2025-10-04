@@ -5,7 +5,7 @@ function renderBasket() {
   if (!basketUI) return;
 
   if (!cart.length) {
-    basketUI.innerHTML = "<p>Sepetiniz boş.</p>";
+    basketUI.innerHTML = "<p>Cart is empty.</p>";
     return;
   }
 

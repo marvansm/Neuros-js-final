@@ -685,6 +685,37 @@ export interface ApiMaterialMaterial extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
+  collectionName: 'orders';
+  info: {
+    displayName: 'order';
+    pluralName: 'orders';
+    singularName: 'order';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    companyName: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.String;
+    firstname: Schema.Attribute.String;
+    items: Schema.Attribute.JSON;
+    lastname: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::order.order'> &
+      Schema.Attribute.Private;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    total: Schema.Attribute.Decimal;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -751,6 +782,33 @@ export interface ApiTagTag extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
+  collectionName: 'teams';
+  info: {
+    displayName: 'team';
+    pluralName: 'teams';
+    singularName: 'team';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    job: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1276,8 +1334,10 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
       'api::material.material': ApiMaterialMaterial;
+      'api::order.order': ApiOrderOrder;
       'api::product.product': ApiProductProduct;
       'api::tag.tag': ApiTagTag;
+      'api::team.team': ApiTeamTeam;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
+
   <body>
     <div
       class="loading fixed w-full h-full bg-white z-[99999] flex items-center justify-center"
@@ -353,13 +354,13 @@
               <h2
                 class="tracking-[-0.03em] font-normal font-sora leading-[1.125em] text-3xl md:text-5xl lg:text-[80px] text-white"
               >
-                Awesome team
+                Cart
               </h2>
             </div>
             <h3
               class="countWhite vertical-text rotate-180 text-xl md:text-3xl lg:text-[80px]"
             >
-              Neural
+              Shop
             </h3>
           </div>
           <div
@@ -370,143 +371,128 @@
             >
               <li class="hover:text-red-500 cursor-pointer">Home</li>
               <li class="text-gray-300">/</li>
-              <li>Awesome team</li>
+              <li>Cart</li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="max-w-[1420px] px-[20px] mx-auto container py-[150px]">
-        <div class="max-w-[1380px] px-[40px] mx-auto">
-          <div class="heading flex items-end justify-between">
-            <div>
-              <p
-                class="leading-[1.75em] font-medium text-[1rem] text-[#656667] font-manrope mb-[21px]"
-              >
-                / team /
-              </p>
-              <h3
-                class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-[#111111]"
-              >
-                The Neural Network <br />
-                experts: uniting talent for <br />
-                intelligent solutions
-              </h3>
-            </div>
-            <div>
-              <ul class="flex items-start flex-col gap-0">
-                <li>
-                  <span class="count" id="counter2">250</span
-                  ><span class="count">+</span>
-                </li>
-                <li>
-                  <p
-                    class="text-[16px] leading-[24px] font-semibold text-[#11110E]"
+      <section
+        class="py-6 md:py-8 lg:py-[122px] mx-auto px-2 md:px-6 lg:px-[40px]"
+      >
+        <div class="max-w-7xl mx-auto px-4 py-8">
+          <div class="grid grid-cols-12 gap-8">
+            <div class="col-span-8">
+              <div class="bg-white rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-6">Billing details</h2>
+
+                <form id="submitForm" class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <input
+                        id="firstName"
+                        type="text"
+                        placeholder="First name *"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        id="lastName"
+                        type="text"
+                        placeholder="Last name *"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <input
+                      id="companyName"
+                      type="text"
+                      placeholder="Company name"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
+                    />
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <input
+                        id="email"
+                        type="email"
+                        placeholder="Email address *"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        id="phone"
+                        type="tel"
+                        placeholder="Phone *"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="space-y-3">
+                    <label
+                      class="flex items-center space-x-3 gap-2 cursor-pointer"
+                    >
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 border-2 border-gray-300 rounded"
+                      />
+                      <span class="text-gray-600">Create an account?</span>
+                    </label>
+                    <label
+                      class="flex items-center gap-2 space-x-3 cursor-pointer"
+                    >
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 border-2 border-gray-300 rounded"
+                      />
+                      <span class="text-gray-600"
+                        >Ship to a different address?</span
+                      >
+                    </label>
+                  </div>
+
+                  <div>
+                    <textarea
+                      rows="4"
+                      placeholder="Additional information"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-500"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-[#333333] text-white py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
                   >
-                    Awesome team members
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="membersTop" class="grid grid-cols-3 "></div>
-        </div>
-      </section>
-      <section>
-        <marquee scrollamount="10" direction="left" class="">
-          <div class="">
-            <h2
-              class="leading-[1.8em] text-[120px] font-sora tracking-[-.03em] text-[#111111]"
-            >
-              Artificial Intellegance in shaping the future of
-              technology./Artificial Intellegance in shaping the future of
-              technology./Artificial Intellegance in shaping the future of
-              technology.
-            </h2>
-          </div>
-        </marquee>
-      </section>
-
-      <section class="bg-[#F0F2F4] py-[150px] mx-auto px-[40px]">
-        <div
-          class="bg-left bg-no-repeat bg-contain"
-          style="
-            background-image: url(https://demo.artureanec.com/themes/neuros/wp-content/uploads/2024/01/awards-bg.png);
-          "
-        >
-          <div class="mx-auto max-w-[1340px] px-[40px] mt-[150px] bg-[#F0F2F4]">
-            <div
-              class="heading pl-[24%] flex flex-col justify-end items-end text-left"
-            >
-              <p
-                class="leading-[1.75em] font-medium text-[1rem] text-[#000] font-manrope mb-[21px]"
-              >
-                / testimonials /
-              </p>
-              <h3
-                class="leading-[1.16666em] text-[60px] font-sora tracking-[-0.05em] font-normal text-[#000]"
-              >
-                Celebrating our award- <br />
-                winning achievements
-              </h3>
+                    Place Order
+                  </button>
+                </form>
+              </div>
             </div>
 
-            <div class="bg-transparent">
-              <div class="border-b border-gray-500 p-8 md:p-12">
-                <div class="grid md:grid-cols-12 gap-6 items-start">
-                  <div class="md:col-span-2 text-gray-500 text-sm">2021</div>
-                  <div class="md:col-span-3 text-gray-400 text-sm">
-                    Site of the day
-                  </div>
-                  <div class="md:col-span-7">
-                    <h2 class="text-2xl font-normal text-gray-900">
-                      NLPGenius: Natural Language Processing Powered by Neural
-                      Networks
-                    </h2>
-                  </div>
-                </div>
-              </div>
+            <div class="col-span-4">
+              <div class="bg-white rounded-lg p-6 sticky top-8">
+                <h2 class="text-2xl font-semibold mb-6">Your order</h2>
+                <div id="cartItemsContainer" class="space-y-4"></div>
 
-              <div class="border-b border-gray-500 p-8 md:p-12">
-                <div class="grid md:grid-cols-12 gap-6 items-start">
-                  <div class="md:col-span-2 text-gray-500 text-sm">2021</div>
-                  <div class="md:col-span-3 text-gray-400 text-sm">
-                    Best animation
-                  </div>
-                  <div class="md:col-span-7">
-                    <h2 class="text-2xl font-normal text-gray-900">
-                      SmartTrader: Predictive Stock Market Analysis using Neural
-                      Networks
-                    </h2>
-                  </div>
-                </div>
-              </div>
+                <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                  <h3 class="text-xl font-semibold mb-4">Cart totals</h3>
 
-              <div class="border-b border-gray-500 p-8 md:p-12">
-                <div class="grid md:grid-cols-12 gap-6 items-start">
-                  <div class="md:col-span-2 text-gray-500 text-sm">2022</div>
-                  <div class="md:col-span-3 text-gray-400 text-sm">
-                    Site of the day
-                  </div>
-                  <div class="md:col-span-7">
-                    <h2 class="text-2xl font-normal text-gray-900">
-                      HealthCareAI: Personalized Diagnostics and Treatment
-                      Recommendations with Neural Networks
-                    </h2>
-                  </div>
-                </div>
-              </div>
+                  <div class="space-y-3">
+                    <div class="flex justify-between text-gray-700">
+                      <span>Subtotal:</span>
+                      <span class="font-medium" id="subtotalEl">$260.78</span>
+                    </div>
 
-              <div class="p-8 md:p-12">
-                <div class="grid md:grid-cols-12 gap-6 items-start">
-                  <div class="md:col-span-2 text-gray-500 text-sm">2023</div>
-                  <div class="md:col-span-3 text-gray-400 text-sm">
-                    Video Splash
-                  </div>
-                  <div class="md:col-span-7">
-                    <h2 class="text-2xl font-normal text-gray-900">
-                      AutoDrive: Autonomous Vehicle Navigation with Advanced
-                      Neural Networks
-                    </h2>
+                    <div
+                      class="flex justify-between text-lg font-semibold border-t border-gray-200 pt-3"
+                    >
+                      <span>Total:</span>
+                      <span id="total">$260.78</span>
+                    </div>
                   </div>
                 </div>
               </div>
