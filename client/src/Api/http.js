@@ -15,6 +15,14 @@ class HttpServices {
       console.log(error);
     }
   }
+  async postData(url, data) {
+    try {
+      const res = await this.axiosInstance.post(url, data);
+      return res?.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 export default HttpServices;

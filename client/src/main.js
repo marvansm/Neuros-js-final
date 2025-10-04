@@ -13,10 +13,12 @@ import {
   sorting,
   tagRender,
 } from "./Components/filter";
+import renderCart from "./Components/renderCart";
 
 import subtotal from "./Components/subTotal";
 import blogPage from "./Pages/blog";
 import cart from "./Pages/cart";
+import checkout from "./Pages/checkout";
 import detailPage from "./Pages/Detail";
 import productsRender from "./Pages/products";
 import teams from "./Pages/team";
@@ -51,5 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   blogPage();
   counterUP();
   teams();
-  teamDetail()
+  teamDetail();
+  checkout();
+  renderCart();
 });
