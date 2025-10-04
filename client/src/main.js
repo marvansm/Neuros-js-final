@@ -17,6 +17,7 @@ import renderCart from "./Components/renderCart";
 
 import subtotal from "./Components/subTotal";
 import blogPage from "./Pages/blog";
+import blogDetail from "./Pages/blogDetail";
 import cart from "./Pages/cart";
 import checkout from "./Pages/checkout";
 import detailPage from "./Pages/Detail";
@@ -56,4 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
   teamDetail();
   checkout();
   renderCart();
+  blogDetail();
 });

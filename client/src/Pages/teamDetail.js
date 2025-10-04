@@ -144,7 +144,7 @@ const teamDetail = () => {
             </div>
           </div>`;
 
-    TEAM_DETAIL_WRAPPER.innerHTML = renderHtml;
+    TEAM_DETAIL_WRAPPER && (TEAM_DETAIL_WRAPPER.innerHTML = renderHtml);
   });
 };
 

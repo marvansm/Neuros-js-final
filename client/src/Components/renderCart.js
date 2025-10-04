@@ -6,17 +6,21 @@ const container = document.querySelector("#cartItemsContainer");
 
 const updateTotals = () => {
   const cart = getCart();
-  const subtotal = cart.reduce((sum, item) => sum + item.discount * item.qty, 0);
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.discount * item.qty,
+    0
+  );
 
-  subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-  totalEl.textContent = `$${subtotal.toFixed(2)}`; 
+  subtotalEl && (subtotalEl.textContent = `$${subtotal.toFixed(2)}`);
+  totalEl && (totalEl.textContent = `$${subtotal.toFixed(2)}`);
 };
 
 const renderCart = () => {
   const cart = getCart();
-  container.innerHTML = cart
-    .map(
-      (item) => `
+  container &&
+    (container.innerHTML = cart
+      .map(
+        (item) => `
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-2">
         <img  src="http://localhost:1337${
@@ -27,8 +31,8 @@ const renderCart = () => {
       <span>$${(item.discount * item.qty).toFixed(2)}</span>
     </div>
   `
-    )
-    .join("");
+      )
+      .join(""));
 
   updateTotals();
 };
