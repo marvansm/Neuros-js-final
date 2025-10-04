@@ -14,11 +14,11 @@ const Register = () => {
         email: REGSITER_EMAIL.value,
         password: REGSITER_PASSWORD.value,
       };
-      api.LoginAuth("auth/local/register", payload).then((data) => {
+      api.loginAuth("auth/local/register", payload).then((data) => {
         if (data?.user) {
           localStorage.setItem("email", data?.user?.email);
           setTimeout(() => {
-            window.location.href = "./login.html";
+            window.location.href = "../login.html";
           }, 800);
           Swal?.fire?.({
             title: "Registered",

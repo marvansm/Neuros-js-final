@@ -1,5 +1,4 @@
 import HttpServices from "../Api/http";
-
 const LOGIN_FORM = document.querySelector("#loginForm");
 const LOGIN_EMAIL = document.querySelector("#loginEmail");
 const LOGIN_PASSWORD = document.querySelector("#loginPassword");
@@ -12,7 +11,7 @@ const Login = () => {
         identifier: LOGIN_EMAIL.value,
         password: LOGIN_PASSWORD.value,
       };
-      api.LoginAuth("auth/local", payload).then((data) => {
+      api.loginAuth("auth/local", payload).then((data) => {
         if (data?.user) {
           localStorage.setItem("token", data?.jwt);
           localStorage.setItem("email", data?.user?.email);

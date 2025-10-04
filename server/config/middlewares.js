@@ -1,25 +1,18 @@
 module.exports = [
   "strapi::logger",
   "strapi::errors",
-  {
-    name: "strapi::security",
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          "connect-src": ["'self'", "http:", "https:"],
-        },
-      },
-    },
-  },
+  "strapi::security",
   {
     name: "strapi::cors",
     config: {
       enabled: true,
-      origin: ["http://localhost:5173", "http://127.0.0.1:3000"],
-      methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
-      keepHeaderOnError: true,
+      headers: "*",
+      origin: [
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+      ],
     },
   },
   "strapi::poweredBy",
