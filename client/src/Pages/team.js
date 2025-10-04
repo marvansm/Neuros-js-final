@@ -12,7 +12,7 @@ const teams = () => {
                 class="box rounded-[25px] overflow-hidden border border-gray-300 w-full h-full group relative"
               >
                 <div class="boxImg relative overflow-hidden bg-[#E3E3E3]">
-                  <a href="./Detail.html?id=${item?.id}">
+                  <a href="./teamDetail.html?id=${item?.id}">
                     <img
  src="http://localhost:1337${item?.image?.url}"
                       alt=""

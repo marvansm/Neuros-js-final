@@ -20,6 +20,7 @@ import cart from "./Pages/cart";
 import detailPage from "./Pages/Detail";
 import productsRender from "./Pages/products";
 import teams from "./Pages/team";
+import teamDetail from "./Pages/teamDetail";
 import counterUP from "./Utils/counterUP";
 
 var swiper = new Swiper(".mySwiper", {
@@ -50,4 +51,5 @@ document.addEventListener("DOMContentLoaded", () => {
   blogPage();
   counterUP();
   teams();
+  teamDetail()
 });
