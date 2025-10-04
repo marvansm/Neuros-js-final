@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
+    "aos": "^2.3.4",
     "axios": "^1.12.2",
     "countup.js": "^2.9.0",
     "nouislider": "^15.8.1",

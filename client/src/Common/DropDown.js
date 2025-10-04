@@ -3,21 +3,21 @@ const DropDownFunction = () => {
   const pagesDropdown = document.getElementById("pagesDropdown");
   let closeTimeout;
 
-  pagesButton.addEventListener("mouseenter", () => {
+  pagesButton && pagesButton.addEventListener("mouseenter", () => {
     clearTimeout(closeTimeout);
     pagesDropdown.classList.remove("invisible", "opacity-0");
     pagesDropdown.classList.add("visible", "opacity-100");
   });
 
-  pagesButton.addEventListener("mouseleave", () => {
+  pagesButton && pagesButton.addEventListener("mouseleave", () => {
     delayedClose();
   });
 
-  pagesDropdown.addEventListener("mouseenter", () => {
+  pagesDropdown && pagesDropdown.addEventListener("mouseenter", () => {
     clearTimeout(closeTimeout);
   });
 
-  pagesDropdown.addEventListener("mouseleave", () => {
+  pagesDropdown && pagesDropdown.addEventListener("mouseleave", () => {
     delayedClose();
   });
 

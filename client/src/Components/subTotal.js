@@ -76,10 +76,13 @@ const subtotal = () => {
         )}</span>
       </div>
 
-      <a href="#" class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-medium py-4 px-8 rounded-full transition-colors">
+      <a href="./checkout.html" class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-medium py-4 px-8 rounded-full transition-colors">
         <span>→</span>
         <span>Proceed to checkout</span>
       </a>
+
+           
+         
     </div>
   `;
 

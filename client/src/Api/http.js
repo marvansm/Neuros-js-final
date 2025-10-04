@@ -23,6 +23,8 @@ class HttpServices {
       console.log(error);
     }
   }
+  async loginAuth(url, payload) {}
+  async getAuth(url, payload) {}
 }
 
 export default HttpServices;

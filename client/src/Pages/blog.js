@@ -6,7 +6,8 @@ const blogPage = () => {
   api.getData(`blogs?populate=*`).then((data) => {
     let renderHTML = data?.data
       ?.map(
-        (item) => ` <div class="rounded-[25px] overflow-hidden cursor-pointer">
+        (item) => ` <a href="./blogDetail.html?id=${item?.id}" class="block">
+  <div class="rounded-[25px] overflow-hidden cursor-pointer">
   <div class="image relative">
     <img
       src="http://localhost:1337${item?.img?.url}"
@@ -24,6 +25,7 @@ const blogPage = () => {
       </h2>
     </div>
   </div>
+  </div>
 
   <div
     class="body px-4 sm:px-6 md:px-8 border border-gray-200 rounded-b-[25px] pb-6"
@@ -40,7 +42,8 @@ const blogPage = () => {
       /${item?.tags} /
     </span>
   </div>
-</div>
+  </div>
+</a>
 `
       )
       .join("");

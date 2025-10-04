@@ -1,3 +1,5 @@
+import Login from "./Auth/login";
+import Register from "./Auth/register";
 import { accardions, projectAcc } from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
@@ -6,6 +8,7 @@ import priceRange from "./Common/priceRange";
 
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
+import aosPlugin from "./Components/Aos";
 import renderBasket from "./Components/basketUI";
 import {
   categoryRender,
@@ -17,6 +20,7 @@ import renderCart from "./Components/renderCart";
 
 import subtotal from "./Components/subTotal";
 import blogPage from "./Pages/blog";
+import blogDetail from "./Pages/blogDetail";
 import cart from "./Pages/cart";
 import checkout from "./Pages/checkout";
 import detailPage from "./Pages/Detail";
@@ -56,4 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   teamDetail();
   checkout();
   renderCart();
+  blogDetail();
+  aosPlugin();
+  Login();
+  Register();
 });

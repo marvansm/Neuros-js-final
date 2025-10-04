@@ -9,38 +9,39 @@ const PHONE = document.querySelector("#phone");
 const api = new HttpServices("http://localhost:1337/api/");
 
 const checkout = () => {
-  SUBMIT_FORM.addEventListener("submit", (e) => {
-    e.preventDefault();
+  SUBMIT_FORM &&
+    SUBMIT_FORM.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-    const formData = {
-      firstname: FIRST_NAME.value,
-      lastname: LAST_NAME.value,
-      companyName: COMPANY_NAME.value,
-      email: EMAIL.value,
-      phone: PHONE.value,
-      items: JSON.parse(localStorage.getItem("cart")) || [],
-      total: localStorage.getItem("subtotal") || 0,
-    };
+      const formData = {
+        firstname: FIRST_NAME.value,
+        lastname: LAST_NAME.value,
+        companyName: COMPANY_NAME.value,
+        email: EMAIL.value,
+        phone: PHONE.value,
+        items: JSON.parse(localStorage.getItem("cart")) || [],
+        total: localStorage.getItem("subtotal") || 0,
+      };
 
-    api
-      .postData("orders", { data: formData })
-      .then((res) => {
-        if (res) {
-          console.log("Order submitted successfully:", res);
-          localStorage.removeItem("cart");
-          localStorage.removeItem("subtotal");
+      api
+        .postData("orders", { data: formData })
+        .then((res) => {
+          if (res) {
+            console.log("Order submitted successfully:", res);
+            localStorage.removeItem("cart");
+            localStorage.removeItem("subtotal");
 
-          window.location.href = "/";
-        }
-      })
-      .catch((err) => {
-        if (err.response) {
-          console.error("Strapi error data:", err.response.data);
-        } else {
-          console.error(err);
-        }
-      });
-  });
+            window.location.href = "/";
+          }
+        })
+        .catch((err) => {
+          if (err.response) {
+            console.error("Strapi error data:", err.response.data);
+          } else {
+            console.error(err);
+          }
+        });
+    });
 };
 
 export default checkout;
