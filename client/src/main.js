@@ -1,3 +1,5 @@
+import Login from "./Auth/login";
+import Register from "./Auth/register";
 import { accardions, projectAcc } from "./Common/Accardion";
 import DropDownFunction from "./Common/DropDown";
 import loadingScreen from "./Common/Loading";
@@ -60,4 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCart();
   blogDetail();
   aosPlugin();
+  Login();
+  Register();
 });

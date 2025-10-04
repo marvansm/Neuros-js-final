@@ -23,6 +23,9 @@ class HttpServices {
       console.log(error);
     }
   }
+  LoginAuth(url, payload) {
+    return this.axiosInstance.post(url, payload);
+  }
 }
 
 export default HttpServices;
