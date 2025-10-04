@@ -6,6 +6,7 @@ import priceRange from "./Common/priceRange";
 
 import scrollAction from "./Common/scroll";
 import toTopScroll from "./Common/toTop";
+import aosPlugin from "./Components/Aos";
 import renderBasket from "./Components/basketUI";
 import {
   categoryRender,
@@ -58,4 +59,5 @@ document.addEventListener("DOMContentLoaded", () => {
   checkout();
   renderCart();
   blogDetail();
+  aosPlugin();
 });
